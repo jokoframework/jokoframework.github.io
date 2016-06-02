@@ -1,0 +1,107 @@
+[
+  
+    {
+      "title"    : "Proyecto piloto",
+      "category" : "Proyecto piloto",
+      "tags"     : "",
+      "url"      : "/pilot/",
+      "date"     : "2016-06-02 08:10:00 -0400"
+    } ,
+  
+    {
+      "title"    : "Desarrollo para Smartphones (Android e iOS)",
+      "category" : "Desarrollo para Smartphones",
+      "tags"     : "",
+      "url"      : "/mobile/",
+      "date"     : "2016-06-02 08:00:00 -0400"
+    } ,
+  
+    {
+      "title"    : "Multi tenant Push Notification",
+      "category" : "Multi tenant push notification server",
+      "tags"     : "",
+      "url"      : "/push/",
+      "date"     : "2016-06-02 07:50:00 -0400"
+    } ,
+  
+    {
+      "title"    : "Mobile Backend As A Service",
+      "category" : "MBaaS",
+      "tags"     : "",
+      "url"      : "/mbaas/",
+      "date"     : "2016-06-01 17:20:00 -0400"
+    } ,
+  
+    {
+      "title"    : "Guías de uso de Componentes",
+      "category" : "Guías de uso de Componentes",
+      "tags"     : "",
+      "url"      : "/docs",
+      "date"     : "2016-06-01 17:00:00 -0400"
+    } ,
+  
+    {
+      "title"    : "Backend Web",
+      "category" : "Backend (Spring Patterns)",
+      "tags"     : "",
+      "url"      : "/backend/",
+      "date"     : "2016-06-01 16:30:00 -0400"
+    } ,
+  
+    {
+      "title"    : "Capa de Controladores",
+      "category" : "Backend (Spring Patterns)",
+      "tags"     : "",
+      "url"      : "/controllers/",
+      "date"     : "2016-06-01 16:25:00 -0400"
+    } ,
+  
+    {
+      "title"    : "Capa de Negocios/Services",
+      "category" : "Backend (Spring Patterns)",
+      "tags"     : "",
+      "url"      : "/bussiness/",
+      "date"     : "2016-06-01 16:20:00 -0400"
+    } ,
+  
+    {
+      "title"    : "Capa de Acceso a Datos",
+      "category" : "Backend (Spring Patterns)",
+      "tags"     : "",
+      "url"      : "/dataAccess/",
+      "date"     : "2016-06-01 16:10:00 -0400"
+    } ,
+  
+    {
+      "title"    : "Front End Web Development",
+      "category" : "Front End Web",
+      "tags"     : "",
+      "url"      : "/frontend/",
+      "date"     : "2016-06-01 16:00:00 -0400"
+    } ,
+  
+    {
+      "title"    : "Utilidades Comunes Web",
+      "category" : "Utilidades Genéricas Web",
+      "tags"     : "",
+      "url"      : "/webutils/",
+      "date"     : "2016-06-01 15:50:00 -0400"
+    } ,
+  
+    {
+      "title"    : "Funcionalidades Comunes",
+      "category" : "Funcionalidades Comunes",
+      "tags"     : "",
+      "url"      : "/commons/",
+      "date"     : "2016-06-01 15:30:00 -0400"
+    } ,
+  
+    {
+      "title"    : "Devops",
+      "category" : "Devops",
+      "tags"     : "",
+      "url"      : "/devops/",
+      "date"     : "2016-06-01 15:00:00 -0400"
+    } 
+  
+]

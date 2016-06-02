@@ -1,0 +1,38 @@
+# Site settings
+title: Joko Framework
+description: > # this means to ignore newlines until "baseurl:"
+  Framework basado en Spring Boot y proyectos lightweighted Javascript, HTML5 y CSS3, orientado a aplicaciones web y mobile.
+baseurl: "/joko/" # the subpath of your site, e.g. /blog/
+url: "http://sodep.github.io" # the base hostname & protocol for your site you most probably don't need to set it
+
+# Build settings
+markdown: kramdown
+paginate: 5 # pagination based on number of posts
+paginate_path: "page/:num"
+highlighter: pygments
+gems: [jekyll-paginate]
+keep_files:             ["css"]
+
+# comments
+disqus: # add disqus shortname here
+
+# author info
+# add your appropriate info here
+author: Sodep S.A # your name
+bio:  Creamos soluciones mediante procesos colaborativos, atendiendo las necesidades reales de los usuarios y clientes # your bio
+email: github@sodep.com.py
+twitter_username: sodepsa
+github_username: https://github.com/sodep/joko
+
+# Theming options
+# These settings are mandatory.
+theme:              'blue-pink'
+# drawer theming
+drawer:
+  text_color:       'grey-600'
+  header_color:     'blue-500'
+  navigation_color: 'grey-200'
+# footer theming
+footer:
+  text_color: 'blue-grey-200'
+  color: 'blue-grey-600'
