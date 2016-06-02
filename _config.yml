@@ -18,11 +18,11 @@ disqus: # add disqus shortname here
 
 # author info
 # add your appropriate info here
-author: Sodep S.A # your name
+author:
 bio:  Creamos soluciones mediante procesos colaborativos, atendiendo las necesidades reales de los usuarios y clientes # your bio
 email: github@sodep.com.py
 twitter_username: sodepsa
-github_username: https://github.com/sodep/joko
+github_username: jokoframework
 
 # Theming options
 # These settings are mandatory.
