@@ -9,7 +9,6 @@ url: "http://jokoframework.github.io" # the base hostname & protocol for your si
 markdown: kramdown
 paginate: 13 # pagination based on number of posts
 paginate_path: "page/:num"
-highlighter: pygments
 gems: [jekyll-paginate]
 keep_files:             ["css"]
 
