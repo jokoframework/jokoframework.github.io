@@ -6,7 +6,7 @@ Para agregar una **nueva sección**, se debe crear un nuevo archivo Markdown en 
 	icon: iconoQueRepresentaráLaSección
 
 
-Para agregar un **nuevo post** (Como son Decops, MBaaS, etc.), se debe crear un nuevo archivo Markdown en la carpeta ***_posts*** con la siguiente cabecera:
+Para agregar un **nuevo post** (Como son Devops, MBaaS, etc.), se debe crear un nuevo archivo Markdown en la carpeta ***_posts*** con la siguiente cabecera:
 
 	layout: post
 	date: fechaDeCreación horaDeCreación
