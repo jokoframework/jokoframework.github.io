@@ -25,5 +25,5 @@ Para la primera versión, tenemos contempladas algunas [categorías](categories.
 
 Joko nació como una iniciativa de [Sodep S.A.] (http://www.sodep.com.py), siendo hoy en día ya una comunidad en crecimiento, y una realidad gracias al apoyo de varias empresas y entusiastas que nos ayudan:
 
-	[Codium S.A.](http://www.codium.com.py)
-	[Cristian Melgarejo Bresanovich])(https://github.com/cmelgarejo)
+* [Codium S.A.](http://www.codium.com.py)
+* [Cristian Melgarejo Bresanovich](https://github.com/cmelgarejo)
