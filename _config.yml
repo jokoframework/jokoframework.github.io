@@ -25,7 +25,7 @@ github_username: jokoframework
 
 # Theming options
 # These settings are mandatory.
-theme:              'blue-pink'
+theme:              'minima'
 # drawer theming
 drawer:
   text_color:       'grey-600'
