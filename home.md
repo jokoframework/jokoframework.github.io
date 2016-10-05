@@ -7,7 +7,7 @@ Joko (palabra en Guaraní, pronunciada yokó en castellano) es un framework basa
 
 Parte de todo desarrollo informático, es seleccionar las tecnologías con que se trabajará en los distintos ambientes en donde se utilizará la aplicación/proyecto, sea para las tecnologías de backend como para las que son utilizadas en una interfaz de usuario (UI).
 
-En [Sodep](http://www.sodep.com.py) venimos trabajando en estandarizar nuestros proyectos sobre una arquitectura común, es decir, definir el framework de desarrollo de Sodep para proyectos <span class="highlight"> <span class="gi"> { web, mobile, microservices, * }</span></span>.
+En un [grupo de empresas y amigos de la informática] venimos trabajando en estandarizar nuestros proyectos sobre una arquitectura común, es decir, definir el framework de desarrollo para proyectos <span class="highlight"> <span class="gi"> { web, mobile, microservices, * }</span></span>.
 
 Al framework lo bautizamos con el codename: **Joko**.
 
@@ -22,3 +22,8 @@ La versión 0.1 es básicamente un merge de los stacks utilizados en nuestros pr
 Buscamos con esto que los avances sean para beneficio de todos los proyectos en curso o por venir, y de todos los que deseen compartir con nosotros Joko.
 
 Para la primera versión, tenemos contempladas algunas [categorías](categories.html) escenciales en nuestro desarrollo.
+
+Joko nació como una iniciativa de [Sodep S.A.](http://www.sodep.com.py), siendo hoy en día ya una comunidad en crecimiento, y una realidad gracias al apoyo de varias empresas y entusiastas que nos ayudan:
+
+* [Codium S.A.](http://www.codium.com.py)
+* [Cristian Melgarejo Bresanovich](https://github.com/cmelgarejo)
