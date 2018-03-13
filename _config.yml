@@ -3,7 +3,7 @@ title: Joko Framework
 description: > # this means to ignore newlines until "baseurl:"
   Framework basado en Spring Boot y proyectos lightweighted Javascript, HTML5 y CSS3, orientado a aplicaciones web y mobile.
 baseurl: "/" # the subpath of your site, e.g. /blog/
-url: "http://jokoframework.github.io" # the base hostname & protocol for your site you most probably don't need to set it
+url: "http://localhost:4000" # the base hostname & protocol for your site you most probably don't need to set it
 
 # Build settings
 markdown: kramdown
