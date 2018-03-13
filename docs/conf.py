@@ -153,3 +153,11 @@ texinfo_documents = [
      author, 'JokoFramework', 'One line description of project.',
      'Miscellaneous'),
 ]
+
+# html_theme = "scrolls"
+html_theme_options = {
+    "github_banner": "true",
+    "fixed_sidebar": "true"
+    #"": "true"
+    #"": "true"
+}
