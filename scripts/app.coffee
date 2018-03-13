@@ -1,6 +1,3 @@
----
----
-
 # app initialize operations
 initialize = ->
   # set min height of container
