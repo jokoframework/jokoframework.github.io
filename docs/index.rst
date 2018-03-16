@@ -20,12 +20,12 @@ Clases
 DateTimeUtils
 ^^^^^^^^^^^^^
 Contiene utilidades para manipular variables del tipo DateTime
-==================  ============= 
-now()              Descripcion 1
-today()               Descripcion 2
-getCurrentMonth     Descripcion 3
-getCurrentYearTrue  Descripcion 4
-==================  =============  
+==================== ============= 
+now()                Descripcion 1
+today()              Descripcion 2
+getCurrentMonth()    Descripcion 3
+getCurrentYearTrue() Descripcion 4
+==================== =============  
 
 joko-security
 =============
