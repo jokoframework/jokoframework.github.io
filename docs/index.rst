@@ -55,5 +55,5 @@ Tables
 
 One more Bounce
 =============
-
-.. image:: images/ball1.gif
+.. image:: ball1.gif
+.. image:: ball1.gif
