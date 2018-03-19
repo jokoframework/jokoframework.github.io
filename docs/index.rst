@@ -19,8 +19,20 @@ Clases
 ------
 DateTimeUtils
 ^^^^^^^^^^^^^
+
+=====  =====  ======
+   Inputs     Output
+------------  ------
+  A      B    A or B
+=====  =====  ======
+False  False  False
+True   False  True
+False  True   True
+True   True   True
+=====  =====  ======
+
 Contiene utilidades para manipular variables del tipo DateTime
--------------------- -------------
+==================== =============
 Función	             Descripción
 ==================== ============= 
 now()                Descripcion 1
