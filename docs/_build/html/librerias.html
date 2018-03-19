@@ -91,31 +91,31 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Librerias</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#joko-utils">joko-utils</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#introduccion">Introducción</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#instalacion">Instalación</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#instalacion-o-actualizacion">Instalación o Actualización</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#clases">Clases</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#jokoconstants">JokoConstants</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#csvutils-csv-comma-seperated-values">CsvUtils (CSV - Comma Seperated Values)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#datetimeutils">DateTimeUtils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dtoutils-data-transfer-object">DTOUtils (Data Transfer Object)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#encodeutils">EncodeUtils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#encryptutils">EncryptUtils</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#excelutils">ExcelUtils</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#jokoutilsexception">JokoUtilsException</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#iputils">IpUtils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#jokoutilsexception">JokoUtilsException</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#locationutils">LocationUtils</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#loggingutils">LoggingUtils</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#numberutils">NumberUtils</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#pdfgenerator">PdfGenerator</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#reflectionutils">ReflectionUtils</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#encryptutils">EncryptUtils</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#dtoutils-data-transfer-object">DTOUtils (Data Transfer Object)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#txuuidgenerator-universally-unique-identifier">TXUUIDGenerator (Universally Unique IDentifier)</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#to-do">TO DO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#seccion-de-to-do-y-to-fix">Seccion de TO DO y TO FIX</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#joko-security">joko-security</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id1">Introducción</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id2">Instalación</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Instalación o Actualización</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id3">Clases</a></li>
 </ul>
 </li>
@@ -201,12 +201,14 @@
 <h2>joko-utils<a class="headerlink" href="#joko-utils" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="section" id="introduccion">
 <h3>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h3>
-<p><strong>joko-utils</strong> es una librería para Java que contiene <em>clases</em> para facilitar el trabajo en proyectos del tipo <em>Backend</em>.</p>
+<p><strong>joko-utils</strong> es una librería para Java que contiene <em>clases</em> con utilidades varias de modo a facilitar el trabajo a la hora de trabajar sobre el <em>Backend</em> de un proyecto.</p>
 </div>
-<div class="section" id="instalacion">
-<h3>Instalación<a class="headerlink" href="#instalacion" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>Descargar el proyecto en Github:
-<a class="reference external" href="https://github.com/jokoframework/joko-utils">https://github.com/jokoframework/joko-utils</a></p>
+<div class="section" id="instalacion-o-actualizacion">
+<h3>Instalación o Actualización<a class="headerlink" href="#instalacion-o-actualizacion" title="Enlazar permanentemente con este título">¶</a></h3>
+<dl class="docutils">
+<dt>Descargar el proyecto en Github:</dt>
+<dd><a class="reference external" href="https://github.com/jokoframework/joko-utils">https://github.com/jokoframework/joko-utils</a></dd>
+</dl>
 </div>
 <div class="section" id="clases">
 <h3>Clases<a class="headerlink" href="#clases" title="Enlazar permanentemente con este título">¶</a></h3>
@@ -218,18 +220,57 @@
 </div>
 <div class="section" id="datetimeutils">
 <h4>DateTimeUtils<a class="headerlink" href="#datetimeutils" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Esta clase contiene un montón de utilidades para trabajar con fechas</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="37%" />
+<col width="13%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Método</th>
+<th class="head">Input</th>
+<th class="head">Output</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>now()</td>
+<td>n/a</td>
+<td>Devuelve la fecha actual</td>
+</tr>
+<tr class="row-odd"><td>today()</td>
+<td>n/a</td>
+<td>Devuelve el dia actual</td>
+</tr>
+<tr class="row-even"><td>getCurrentMonth()</td>
+<td>n/a</td>
+<td>Devuelve el mes actual</td>
+</tr>
+<tr class="row-odd"><td>getCurrentYear()</td>
+<td>n/a</td>
+<td>Devuelve el año actual</td>
+</tr>
+</tbody>
+</table>
+<p>Continuaria hasta tener todos!</p>
+</div>
+<div class="section" id="dtoutils-data-transfer-object">
+<h4>DTOUtils (Data Transfer Object)<a class="headerlink" href="#dtoutils-data-transfer-object" title="Enlazar permanentemente con este título">¶</a></h4>
 </div>
 <div class="section" id="encodeutils">
 <h4>EncodeUtils<a class="headerlink" href="#encodeutils" title="Enlazar permanentemente con este título">¶</a></h4>
 </div>
+<div class="section" id="encryptutils">
+<h4>EncryptUtils<a class="headerlink" href="#encryptutils" title="Enlazar permanentemente con este título">¶</a></h4>
+</div>
 <div class="section" id="excelutils">
 <h4>ExcelUtils<a class="headerlink" href="#excelutils" title="Enlazar permanentemente con este título">¶</a></h4>
 </div>
-<div class="section" id="jokoutilsexception">
-<h4>JokoUtilsException<a class="headerlink" href="#jokoutilsexception" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
 <div class="section" id="iputils">
 <h4>IpUtils<a class="headerlink" href="#iputils" title="Enlazar permanentemente con este título">¶</a></h4>
+</div>
+<div class="section" id="jokoutilsexception">
+<h4>JokoUtilsException<a class="headerlink" href="#jokoutilsexception" title="Enlazar permanentemente con este título">¶</a></h4>
 </div>
 <div class="section" id="locationutils">
 <h4>LocationUtils<a class="headerlink" href="#locationutils" title="Enlazar permanentemente con este título">¶</a></h4>
@@ -246,18 +287,12 @@
 <div class="section" id="reflectionutils">
 <h4>ReflectionUtils<a class="headerlink" href="#reflectionutils" title="Enlazar permanentemente con este título">¶</a></h4>
 </div>
-<div class="section" id="encryptutils">
-<h4>EncryptUtils<a class="headerlink" href="#encryptutils" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="dtoutils-data-transfer-object">
-<h4>DTOUtils (Data Transfer Object)<a class="headerlink" href="#dtoutils-data-transfer-object" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
 <div class="section" id="txuuidgenerator-universally-unique-identifier">
 <h4>TXUUIDGenerator (Universally Unique IDentifier)<a class="headerlink" href="#txuuidgenerator-universally-unique-identifier" title="Enlazar permanentemente con este título">¶</a></h4>
 </div>
 </div>
-<div class="section" id="to-do">
-<h3>TO DO<a class="headerlink" href="#to-do" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="seccion-de-to-do-y-to-fix">
+<h3>Seccion de TO DO y TO FIX<a class="headerlink" href="#seccion-de-to-do-y-to-fix" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Lista de cosas por hacer o que se deben mejorar</p>
 </div>
 </div>
@@ -266,12 +301,20 @@
 <h2>joko-security<a class="headerlink" href="#joko-security" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="section" id="id1">
 <h3>Introducción<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Que es, para que se hizo, etc.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="id2">
-<h3>Instalación<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h3>
+<h3>Instalación o Actualización<a class="headerlink" href="#id2" title="Enlazar permanentemente con este título">¶</a></h3>
+<p><strong>joko-security</strong> necesita un repositorio de datos en el cual se almacenan datos para realizar el proceso de autorización. El sistema utiliza JPA (Java Persistence API) de una manera bastante agnóstica a la BD. Sin embargo, actualmente solamente está probado con PostgreSQL 9.3</p>
+<p><strong>Observación</strong>: Favor referir a la guia de upgrade para actualizar desde la versión 0.1.4. Y primero leer los cambios que se introdujeron a partir de la versión 0.1.5.
+Inicio desde .sql</p>
+<p>El inicio mas sencillo es correr el script .sql correspondiente a la BD que utiliza. Estos scripts se encuentran en /db/sql-initialization</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="id3">
 <h3>Clases<a class="headerlink" href="#id3" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Clases y Funcionalidades</p>
 </div>
 </div>
 </div>
