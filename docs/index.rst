@@ -20,6 +20,8 @@ Clases
 DateTimeUtils
 ^^^^^^^^^^^^^
 Contiene utilidades para manipular variables del tipo DateTime
+-------------------- -------------
+Función	             Descripción
 ==================== ============= 
 now()                Descripcion 1
 today()              Descripcion 2
