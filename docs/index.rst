@@ -32,27 +32,28 @@ True   True   True
 =====  =====  ======
 
 Contiene utilidades para manipular variables del tipo DateTime
-==================== =============
-Función	             Descripción
-==================== ============= 
-now()                Descripcion 1
-today()              Descripcion 2
-getCurrentMonth()    Descripcion 3
-getCurrentYearTrue() Descripcion 4
-==================== =============  
++----------------------+---------------+
+| Función              | Descripción   |
++======================+===============+ 
+| now()                | Descripcion 1 |
++----------------------+---------------+
+| today()              | Descripcion 2 |
++----------------------+---------------+
+| getCurrentMonth()    | Descripcion 3 |
++----------------------+---------------+
+| getCurrentYearTrue() | Descripcion 4 |
++----------------------+---------------+  
 
-Contiene utilidades para manipular variables del tipo DateTime
-+--------------------+--------------+
-|Función             |Descripción   |
-+====================+==============+ 
-|now()               |Descripcion 1 |
-+--------------------+--------------+
-|today()             |Descripcion 2 |
-+--------------------+--------------+
-|getCurrentMonth()   |Descripcion 3 |
-+--------------------+--------------+
-|getCurrentYearTrue()|Descripcion 4 |
-+--------------------+--------------+  
+=====  =====  ======
+   Inputs     Output
+------------  ------
+  A      B    A or B
+=====  =====  ======
+False  False  False
+True   False  True
+False  True   True
+True   True   True
+=====  =====  ======
 
 joko-security
 =============
