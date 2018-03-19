@@ -1,195 +1,272 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Librerias &#8212; documentación de Joko Framework - </title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/translations.js"></script>
-    <link rel="index" title="Índice" href="genindex.html" />
-    <link rel="search" title="Búsqueda" href="search.html" />
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Que es el Joko Framework? &mdash; documentación de Joko Framework - </title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Índice"
+              href="genindex.html"/>
+        <link rel="search" title="Búsqueda" href="search.html"/>
+    <link rel="top" title="documentación de Joko Framework - " href="#"/>
+        <link rel="next" title="Librerias" href="librerias.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
    
-  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
-  
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  <div class="wy-grid-for-nav">
 
-  </head><body>
-  <div class="document">
     
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="#">Tabla de Contenidos</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Librerias</a><ul>
-<li><a class="reference internal" href="#joko-utils">joko-utils</a><ul>
-<li><a class="reference internal" href="#introduccion">Introducción</a></li>
-<li><a class="reference internal" href="#instalacion">Instalación</a></li>
-<li><a class="reference internal" href="#clases">Clases</a><ul>
-<li><a class="reference internal" href="#jokoconstants">JokoConstants</a></li>
-<li><a class="reference internal" href="#csvutils-csv-comma-seperated-values">CsvUtils (CSV - Comma Seperated Values)</a></li>
-<li><a class="reference internal" href="#datetimeutils">DateTimeUtils</a></li>
-<li><a class="reference internal" href="#encodeutils">EncodeUtils</a></li>
-<li><a class="reference internal" href="#excelutils">ExcelUtils</a></li>
-<li><a class="reference internal" href="#jokoutilsexception">JokoUtilsException</a></li>
-<li><a class="reference internal" href="#iputils">IpUtils</a></li>
-<li><a class="reference internal" href="#locationutils">LocationUtils</a></li>
-<li><a class="reference internal" href="#loggingutils">LoggingUtils</a></li>
-<li><a class="reference internal" href="#numberutils">NumberUtils</a></li>
-<li><a class="reference internal" href="#pdfgenerator">PdfGenerator</a></li>
-<li><a class="reference internal" href="#reflectionutils">ReflectionUtils</a></li>
-<li><a class="reference internal" href="#encryptutils">EncryptUtils</a></li>
-<li><a class="reference internal" href="#dtoutils-data-transfer-object">DTOUtils (Data Transfer Object)</a></li>
-<li><a class="reference internal" href="#txuuidgenerator-universally-unique-identifier">TXUUIDGenerator (Universally Unique IDentifier)</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#clases-que-habria-que-expandir-o-ver-de-hacer-nota-final">Clases que habría que expandir o ver de hacer/Nota Final</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#joko-security">joko-security</a></li>
-<li><a class="reference internal" href="#jjwt">jjwt</a></li>
-</ul>
-</li>
-</ul>
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="#">Documentation overview</a><ul>
-  </ul></li>
-</ul>
-</div>
-  <div role="note" aria-label="source link">
-    <h3>Esta página</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/index.rst.txt"
-            rel="nofollow">Mostrar el código</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Búsqueda rápida</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Ir a" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="#" class="icon icon-home"> Joko Framework
+          
+
+          
+          </a>
+
+          
             
-  <div class="toctree-wrapper compound">
-</div>
-<div class="section" id="librerias">
-<h1>Librerias<a class="headerlink" href="#librerias" title="Enlazar permanentemente con este título">¶</a></h1>
-<div class="section" id="joko-utils">
-<h2>joko-utils<a class="headerlink" href="#joko-utils" title="Enlazar permanentemente con este título">¶</a></h2>
-<div class="section" id="introduccion">
-<h3>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h3>
-<p><strong>joko-utils</strong> es una librería para Java que contiene <em>clases</em> para facilitar el trabajo en proyectos del tipo <em>Backend</em>.</p>
-</div>
-<div class="section" id="instalacion">
-<h3>Instalación<a class="headerlink" href="#instalacion" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>Descargar el proyecto en Github:
-<a class="reference external" href="https://github.com/jokoframework/joko-utils">https://github.com/jokoframework/joko-utils</a></p>
-</div>
-<div class="section" id="clases">
-<h3>Clases<a class="headerlink" href="#clases" title="Enlazar permanentemente con este título">¶</a></h3>
-<div class="section" id="jokoconstants">
-<h4>JokoConstants<a class="headerlink" href="#jokoconstants" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="csvutils-csv-comma-seperated-values">
-<h4>CsvUtils (CSV - Comma Seperated Values)<a class="headerlink" href="#csvutils-csv-comma-seperated-values" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="datetimeutils">
-<h4>DateTimeUtils<a class="headerlink" href="#datetimeutils" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="encodeutils">
-<h4>EncodeUtils<a class="headerlink" href="#encodeutils" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="excelutils">
-<h4>ExcelUtils<a class="headerlink" href="#excelutils" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="jokoutilsexception">
-<h4>JokoUtilsException<a class="headerlink" href="#jokoutilsexception" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="iputils">
-<h4>IpUtils<a class="headerlink" href="#iputils" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="locationutils">
-<h4>LocationUtils<a class="headerlink" href="#locationutils" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="loggingutils">
-<h4>LoggingUtils<a class="headerlink" href="#loggingutils" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="numberutils">
-<h4>NumberUtils<a class="headerlink" href="#numberutils" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="pdfgenerator">
-<h4>PdfGenerator<a class="headerlink" href="#pdfgenerator" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="reflectionutils">
-<h4>ReflectionUtils<a class="headerlink" href="#reflectionutils" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="encryptutils">
-<h4>EncryptUtils<a class="headerlink" href="#encryptutils" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="dtoutils-data-transfer-object">
-<h4>DTOUtils (Data Transfer Object)<a class="headerlink" href="#dtoutils-data-transfer-object" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="txuuidgenerator-universally-unique-identifier">
-<h4>TXUUIDGenerator (Universally Unique IDentifier)<a class="headerlink" href="#txuuidgenerator-universally-unique-identifier" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-</div>
-<div class="section" id="clases-que-habria-que-expandir-o-ver-de-hacer-nota-final">
-<h3>Clases que habría que expandir o ver de hacer/Nota Final<a class="headerlink" href="#clases-que-habria-que-expandir-o-ver-de-hacer-nota-final" title="Enlazar permanentemente con este título">¶</a></h3>
-</div>
-</div>
-<div class="section" id="joko-security">
-<h2>joko-security<a class="headerlink" href="#joko-security" title="Enlazar permanentemente con este título">¶</a></h2>
-</div>
-<div class="section" id="jjwt">
-<h2>jjwt<a class="headerlink" href="#jjwt" title="Enlazar permanentemente con este título">¶</a></h2>
-</div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
 </div>
 
+          
+        </div>
 
-          </div>
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Documentación</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="librerias.html">Librerias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutoriales.html">Tutoriales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="startkits.html">Start-Kits</a></li>
+</ul>
+
+            
+          
         </div>
       </div>
-    <div class="clearer"></div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Joko Framework</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Que es el Joko Framework?</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="librerias.html" class="btn btn-neutral float-right" title="Librerias" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
   </div>
-    <div class="footer">
-      &copy;2018, SODEP S.A..
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="que-es-el-joko-framework">
+<h1>Que es el Joko Framework?<a class="headerlink" href="#que-es-el-joko-framework" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Joko es un framework basado en Spring Boot y proyectos lightweighted JavaScript, HTML5 y CSS3 de modo que contiene una cantidad de proyectos para ayudar en el desarrollo de software orientado a aplicaciones web y mobile.</p>
+<p>Los proyectos que se encuentran actualmente en el framework son de alguno de los siguientes tipos:</p>
+<ul class="simple">
+<li>Librerías para ayudar con los distintos aspectos del desarrollo</li>
+<li>Kits de inicio (Starter-Kits) que ya combinan múltiples tecnologías necesarias</li>
+<li>Proyectos de ejemplo para usar como Template</li>
+<li>Proyectos para montar como servicios y utilizarlos</li>
+</ul>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Documentación</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="librerias.html">Librerias</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="librerias.html#joko-utils">joko-utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="librerias.html#joko-security">joko-security</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutoriales.html">Tutoriales</a></li>
+<li class="toctree-l1"><a class="reference internal" href="startkits.html">Start-Kits</a></li>
+</ul>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="historia">
+<h1>Historia<a class="headerlink" href="#historia" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Parte de todo desarrollo informático, es seleccionar las tecnologías con que se trabajará en los distintos ambientes en donde se utilizará la aplicación/proyecto, sea para las tecnologías de backend como para las que son utilizadas en una interfaz de usuario (UI).</p>
+<p>En un [grupo de empresas y amigos de la informática] venimos trabajando en estandarizar nuestros proyectos sobre una arquitectura común, es decir, definir el framework de desarrollo para proyectos { web, mobile, microservices, * }.</p>
+<p>Al framework lo bautizamos con el codename: <strong>Joko</strong>.</p>
+<p>En guaraní significa «sujetar», tiene el plus de la J de Java, tecnología principal para el desarrollo de backends,es pronunciable en Inglés, y se adecua bastante a la tarea más dura que tiene un framework:</p>
+<p>Sujetar todo para que funcionen las diferentes tecnologías juntas.</p>
+<p>Buscamos con esto que los avances sean para beneficio de todos los proyectos en curso o por venir, y de todos los que deseen compartir con nosotros Joko.</p>
+<p>Para la primera versión, tenemos contempladas algunas categorías esenciales en nuestro desarrollo.</p>
+<p>Joko nació como una iniciativa de Sodep S.A. siendo hoy en día ya una comunidad en crecimiento, y una realidad gracias al apoyo de varias empresas y entusiastas que nos ayudan:</p>
+<p>Codium S.A.
+Cristian Melgarejo Bresanovich</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+        <a href="librerias.html" class="btn btn-neutral float-right" title="Librerias" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      |
-      <a href="_sources/index.rst.txt"
-          rel="nofollow">Page source</a>
+      
     </div>
+  
 
-    
-    <a href="https://github.com//" class="github">
-        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
-    </a>
-    
+  <hr/>
 
-    
-  </body>
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, SODEP S.A..
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
 </html>
