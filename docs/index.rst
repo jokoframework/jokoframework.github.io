@@ -1,62 +1,60 @@
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :caption: Contents:
 
-joko-utils (Gitblit + Github)
-===================
+Librerias
+#########
+
+joko-utils
+**********
+
 Introducción
-------------
+============
 **joko-utils** es una librería para Java que contiene *clases* para facilitar el trabajo en proyectos del tipo *Backend*.
 
-Instalación y Uso
------------------
+Instalación
+===========
 Descargar el proyecto en Github:
 https://github.com/jokoframework/joko-utils
 
-Gitblit (TEMP - Borro esto cuando termine la sección)
------------------------------------------------------
 Clases
-------
+======
+JokoConstants
+^^^^^^^^^^^^^^^^^^^^^^^^^
+CsvUtils (CSV - Comma Seperated Values)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 DateTimeUtils
-^^^^^^^^^^^^^
-
-=====  =====  ======
-   Inputs     Output
-------------  ------
-  A      B    A or B
-=====  =====  ======
-False  False  False
-True   False  True
-False  True   True
-True   True   True
-=====  =====  ======
-
-Contiene utilidades para manipular variables del tipo DateTime
-+----------------------+---------------+
-| Función              | Descripción   |
-+======================+===============+ 
-| now()                | Descripcion 1 |
-+----------------------+---------------+
-| today()              | Descripcion 2 |
-+----------------------+---------------+
-| getCurrentMonth()    | Descripcion 3 |
-+----------------------+---------------+
-| getCurrentYearTrue() | Descripcion 4 |
-+----------------------+---------------+  
-
-=====  =====  ======
-   Inputs     Output
-------------  ------
-  A      B    A or B
-=====  =====  ======
-False  False  False
-True   False  True
-False  True   True
-True   True   True
-=====  =====  ======
+^^^^^^^^^^^^^^^^^^^^^^^^^
+EncodeUtils
+^^^^^^^^^^^^^^^^^^^^^^^^^
+ExcelUtils
+^^^^^^^^^^^^^^^^^^^^^^^^^
+JokoUtilsException
+^^^^^^^^^^^^^^^^^^^^^^^^^
+IpUtils
+^^^^^^^^^^^^^^^^^^^^^^^^^
+LocationUtils
+^^^^^^^^^^^^^^^^^^^^^^^^^
+LoggingUtils
+^^^^^^^^^^^^^^^^^^^^^^^^^
+NumberUtils
+^^^^^^^^^^^^^^^^^^^^^^^^^
+PdfGenerator
+^^^^^^^^^^^^^^^^^^^^^^^^^
+ReflectionUtils
+^^^^^^^^^^^^^^^^^^^^^^^^^
+EncryptUtils
+^^^^^^^^^^^^^^^^^^^^^^^^^
+DTOUtils (Data Transfer Object)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TXUUIDGenerator (Universally Unique IDentifier)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        
+Clases que habría que expandir o ver de hacer/Nota Final
+=========================================================
 
 joko-security
-=============
+********************
 
 jjwt
-====
+**********

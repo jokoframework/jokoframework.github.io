@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Joko Framework &#8212; documentación de Joko Framework - </title>
+    <title>Librerias &#8212; documentación de Joko Framework - </title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" src="_static/documentation_options.js"></script>
@@ -29,13 +29,33 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="#">Tabla de Contenidos</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Joko Framework</a></li>
-<li><a class="reference internal" href="#title">Title</a><ul>
-<li><a class="reference internal" href="#sub-title">Sub-Title</a><ul>
-<li><a class="reference internal" href="#sub-sub-title">Sub-Sub-Title</a></li>
-<li><a class="reference internal" href="#tables">Tables</a></li>
+<li><a class="reference internal" href="#">Librerias</a><ul>
+<li><a class="reference internal" href="#joko-utils">joko-utils</a><ul>
+<li><a class="reference internal" href="#introduccion">Introducción</a></li>
+<li><a class="reference internal" href="#instalacion">Instalación</a></li>
+<li><a class="reference internal" href="#clases">Clases</a><ul>
+<li><a class="reference internal" href="#jokoconstants">JokoConstants</a></li>
+<li><a class="reference internal" href="#csvutils-csv-comma-seperated-values">CsvUtils (CSV - Comma Seperated Values)</a></li>
+<li><a class="reference internal" href="#datetimeutils">DateTimeUtils</a></li>
+<li><a class="reference internal" href="#encodeutils">EncodeUtils</a></li>
+<li><a class="reference internal" href="#excelutils">ExcelUtils</a></li>
+<li><a class="reference internal" href="#jokoutilsexception">JokoUtilsException</a></li>
+<li><a class="reference internal" href="#iputils">IpUtils</a></li>
+<li><a class="reference internal" href="#locationutils">LocationUtils</a></li>
+<li><a class="reference internal" href="#loggingutils">LoggingUtils</a></li>
+<li><a class="reference internal" href="#numberutils">NumberUtils</a></li>
+<li><a class="reference internal" href="#pdfgenerator">PdfGenerator</a></li>
+<li><a class="reference internal" href="#reflectionutils">ReflectionUtils</a></li>
+<li><a class="reference internal" href="#encryptutils">EncryptUtils</a></li>
+<li><a class="reference internal" href="#dtoutils-data-transfer-object">DTOUtils (Data Transfer Object)</a></li>
+<li><a class="reference internal" href="#txuuidgenerator-universally-unique-identifier">TXUUIDGenerator (Universally Unique IDentifier)</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#clases-que-habria-que-expandir-o-ver-de-hacer-nota-final">Clases que habría que expandir o ver de hacer/Nota Final</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#joko-security">joko-security</a></li>
+<li><a class="reference internal" href="#jjwt">jjwt</a></li>
 </ul>
 </li>
 </ul>
@@ -71,74 +91,78 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="joko-framework">
-<h1>Joko Framework<a class="headerlink" href="#joko-framework" title="Enlazar permanentemente con este título">¶</a></h1>
+  <div class="toctree-wrapper compound">
 </div>
-<div class="section" id="title">
-<h1>Title<a class="headerlink" href="#title" title="Enlazar permanentemente con este título">¶</a></h1>
-<div class="section" id="sub-title">
-<h2>Sub-Title<a class="headerlink" href="#sub-title" title="Enlazar permanentemente con este título">¶</a></h2>
-<div class="section" id="sub-sub-title">
-<h3>Sub-Sub-Title<a class="headerlink" href="#sub-sub-title" title="Enlazar permanentemente con este título">¶</a></h3>
-<p>Explanation for something:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span class="nb">print</span> <span class="s1">&#39;see ya&#39;</span>
-<span class="o">&gt;&gt;</span> <span class="n">see</span> <span class="n">ya</span>
-</pre></div>
+<div class="section" id="librerias">
+<h1>Librerias<a class="headerlink" href="#librerias" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="joko-utils">
+<h2>joko-utils<a class="headerlink" href="#joko-utils" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="introduccion">
+<h3>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h3>
+<p><strong>joko-utils</strong> es una librería para Java que contiene <em>clases</em> para facilitar el trabajo en proyectos del tipo <em>Backend</em>.</p>
 </div>
-<p>Text, followed by code sample box.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">y</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">square_sum</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="ow">is</span> <span class="n">bigger</span> <span class="n">than</span> <span class="mi">10</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">a</span> <span class="o">==</span> <span class="mi">10</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="ow">is</span> <span class="n">equal</span> <span class="n">to</span> <span class="mi">10</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="ow">is</span> <span class="n">lower</span> <span class="n">than</span> <span class="mi">10</span><span class="p">)</span>
-</pre></div>
+<div class="section" id="instalacion">
+<h3>Instalación<a class="headerlink" href="#instalacion" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Descargar el proyecto en Github:
+<a class="reference external" href="https://github.com/jokoframework/joko-utils">https://github.com/jokoframework/joko-utils</a></p>
 </div>
-<p>You can add <code class="docutils literal notranslate"><span class="pre">--message=&quot;MESSAGE&quot;</span></code> to your git commit to write the message on one command</p>
+<div class="section" id="clases">
+<h3>Clases<a class="headerlink" href="#clases" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="jokoconstants">
+<h4>JokoConstants<a class="headerlink" href="#jokoconstants" title="Enlazar permanentemente con este título">¶</a></h4>
 </div>
-<div class="section" id="tables">
-<h3>Tables<a class="headerlink" href="#tables" title="Enlazar permanentemente con este título">¶</a></h3>
-<table border="1" class="docutils">
-<colgroup>
-<col width="34%" />
-<col width="34%" />
-<col width="31%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Abc</th>
-<th class="head">NDS</th>
-<th class="head">Dqw</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>body row 1</td>
-<td>column 2</td>
-<td>column 3</td>
-</tr>
-<tr class="row-odd"><td>body row 2</td>
-<td colspan="2">Cells may span columns.</td>
-</tr>
-<tr class="row-even"><td>body row 3</td>
-<td rowspan="2">Cells may
-span rows.</td>
-<td rowspan="2"><ul class="first last simple">
-<li>Cells</li>
-<li>contain</li>
-<li>blocks.</li>
-</ul>
-</td>
-</tr>
-<tr class="row-odd"><td>body row 4</td>
-</tr>
-</tbody>
-</table>
-<div class="toctree-wrapper compound">
+<div class="section" id="csvutils-csv-comma-seperated-values">
+<h4>CsvUtils (CSV - Comma Seperated Values)<a class="headerlink" href="#csvutils-csv-comma-seperated-values" title="Enlazar permanentemente con este título">¶</a></h4>
+</div>
+<div class="section" id="datetimeutils">
+<h4>DateTimeUtils<a class="headerlink" href="#datetimeutils" title="Enlazar permanentemente con este título">¶</a></h4>
+</div>
+<div class="section" id="encodeutils">
+<h4>EncodeUtils<a class="headerlink" href="#encodeutils" title="Enlazar permanentemente con este título">¶</a></h4>
+</div>
+<div class="section" id="excelutils">
+<h4>ExcelUtils<a class="headerlink" href="#excelutils" title="Enlazar permanentemente con este título">¶</a></h4>
+</div>
+<div class="section" id="jokoutilsexception">
+<h4>JokoUtilsException<a class="headerlink" href="#jokoutilsexception" title="Enlazar permanentemente con este título">¶</a></h4>
+</div>
+<div class="section" id="iputils">
+<h4>IpUtils<a class="headerlink" href="#iputils" title="Enlazar permanentemente con este título">¶</a></h4>
+</div>
+<div class="section" id="locationutils">
+<h4>LocationUtils<a class="headerlink" href="#locationutils" title="Enlazar permanentemente con este título">¶</a></h4>
+</div>
+<div class="section" id="loggingutils">
+<h4>LoggingUtils<a class="headerlink" href="#loggingutils" title="Enlazar permanentemente con este título">¶</a></h4>
+</div>
+<div class="section" id="numberutils">
+<h4>NumberUtils<a class="headerlink" href="#numberutils" title="Enlazar permanentemente con este título">¶</a></h4>
+</div>
+<div class="section" id="pdfgenerator">
+<h4>PdfGenerator<a class="headerlink" href="#pdfgenerator" title="Enlazar permanentemente con este título">¶</a></h4>
+</div>
+<div class="section" id="reflectionutils">
+<h4>ReflectionUtils<a class="headerlink" href="#reflectionutils" title="Enlazar permanentemente con este título">¶</a></h4>
+</div>
+<div class="section" id="encryptutils">
+<h4>EncryptUtils<a class="headerlink" href="#encryptutils" title="Enlazar permanentemente con este título">¶</a></h4>
+</div>
+<div class="section" id="dtoutils-data-transfer-object">
+<h4>DTOUtils (Data Transfer Object)<a class="headerlink" href="#dtoutils-data-transfer-object" title="Enlazar permanentemente con este título">¶</a></h4>
+</div>
+<div class="section" id="txuuidgenerator-universally-unique-identifier">
+<h4>TXUUIDGenerator (Universally Unique IDentifier)<a class="headerlink" href="#txuuidgenerator-universally-unique-identifier" title="Enlazar permanentemente con este título">¶</a></h4>
 </div>
 </div>
+<div class="section" id="clases-que-habria-que-expandir-o-ver-de-hacer-nota-final">
+<h3>Clases que habría que expandir o ver de hacer/Nota Final<a class="headerlink" href="#clases-que-habria-que-expandir-o-ver-de-hacer-nota-final" title="Enlazar permanentemente con este título">¶</a></h3>
+</div>
+</div>
+<div class="section" id="joko-security">
+<h2>joko-security<a class="headerlink" href="#joko-security" title="Enlazar permanentemente con este título">¶</a></h2>
+</div>
+<div class="section" id="jjwt">
+<h2>jjwt<a class="headerlink" href="#jjwt" title="Enlazar permanentemente con este título">¶</a></h2>
 </div>
 </div>
 
