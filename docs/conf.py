@@ -156,7 +156,5 @@ texinfo_documents = [
 
 # html_theme = "scrolls"
 html_theme_options = {
-    #"collapse_navigation": "true",
     "prev_next_buttons_location": "both"
-    #"": "true"
 }

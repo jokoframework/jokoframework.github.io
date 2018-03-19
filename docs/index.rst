@@ -12,9 +12,8 @@ Los proyectos que se encuentran actualmente en el framework son de alguno de los
 - Proyectos de ejemplo para usar como Template
 - Proyectos para montar como servicios y utilizarlos
 
-
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Documentación
 
    librerias.rst
@@ -38,9 +37,7 @@ Sujetar todo para que funcionen las diferentes tecnologías juntas.
 
 Buscamos con esto que los avances sean para beneficio de todos los proyectos en curso o por venir, y de todos los que deseen compartir con nosotros Joko.
 
-Para la primera versión, tenemos contempladas algunas categorías esenciales en nuestro desarrollo.
+Joko nació como una iniciativa de **Sodep S.A.** siendo hoy en día ya una comunidad en crecimiento, y una realidad gracias al apoyo de varias empresas y entusiastas que nos ayudan:
 
-Joko nació como una iniciativa de Sodep S.A. siendo hoy en día ya una comunidad en crecimiento, y una realidad gracias al apoyo de varias empresas y entusiastas que nos ayudan:
-
-Codium S.A.
-Cristian Melgarejo Bresanovich
+- Codium S.A.
+- Cristian Melgarejo Bresanovich
