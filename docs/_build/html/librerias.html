@@ -30,6 +30,8 @@
   
 
   
+    <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+  
 
   
         <link rel="index" title="Índice"
@@ -203,6 +205,7 @@
 <h3>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h3>
 <p><strong>joko-utils</strong> es una librería para Java que contiene <em>clases</em> con utilidades varias de modo a facilitar el trabajo a la hora de trabajar sobre el <em>Backend</em> de un proyecto.</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="instalacion-o-actualizacion">
 <h3>Instalación o Actualización<a class="headerlink" href="#instalacion-o-actualizacion" title="Enlazar permanentemente con este título">¶</a></h3>
 <dl class="docutils">
@@ -210,49 +213,102 @@
 <dd><a class="reference external" href="https://github.com/jokoframework/joko-utils">https://github.com/jokoframework/joko-utils</a></dd>
 </dl>
 </div>
+<hr class="docutils" />
 <div class="section" id="clases">
 <h3>Clases<a class="headerlink" href="#clases" title="Enlazar permanentemente con este título">¶</a></h3>
 <div class="section" id="jokoconstants">
 <h4>JokoConstants<a class="headerlink" href="#jokoconstants" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Descripción de JokoConstants</p>
 </div>
 <div class="section" id="csvutils-csv-comma-seperated-values">
 <h4>CsvUtils (CSV - Comma Seperated Values)<a class="headerlink" href="#csvutils-csv-comma-seperated-values" title="Enlazar permanentemente con este título">¶</a></h4>
+<p>Descripción de CsvUtils</p>
 </div>
 <div class="section" id="datetimeutils">
 <h4>DateTimeUtils<a class="headerlink" href="#datetimeutils" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Esta clase contiene un montón de utilidades para trabajar con fechas</p>
+<p>Esta clase contiene un montón de utilidades para trabajar con fechas y tiempos</p>
 <table border="1" class="docutils">
 <colgroup>
-<col width="37%" />
-<col width="13%" />
-<col width="50%" />
+<col width="38%" />
+<col width="62%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">Método</th>
-<th class="head">Input</th>
-<th class="head">Output</th>
+<th class="head">Descripción</th>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>now()</td>
-<td>n/a</td>
-<td>Devuelve la fecha actual</td>
+<tr class="row-even"><td><strong>Date</strong> now()</td>
+<td>Retorna la fecha y tiempo actual</td>
 </tr>
-<tr class="row-odd"><td>today()</td>
-<td>n/a</td>
-<td>Devuelve el dia actual</td>
+<tr class="row-odd"><td><strong>Date</strong> today()</td>
+<td>Retorna la fecha y tiempo del día actual</td>
 </tr>
-<tr class="row-even"><td>getCurrentMonth()</td>
-<td>n/a</td>
-<td>Devuelve el mes actual</td>
+<tr class="row-even"><td><strong>int</strong> getCurrentMonth()</td>
+<td>Retorna el mes actual como un número</td>
 </tr>
-<tr class="row-odd"><td>getCurrentYear()</td>
-<td>n/a</td>
-<td>Devuelve el año actual</td>
+<tr class="row-odd"><td><strong>int</strong> getCurrentYear()</td>
+<td>Retorna el año actual como un número</td>
+</tr>
+<tr class="row-even"><td><strong>Integer</strong> yearsBetween(<strong>Date</strong> fromDate, <strong>Date</strong> toDate)</td>
+<td>Retorna un objeto con la cantidad de años entre las dos fechas proveídas</td>
+</tr>
+<tr class="row-odd"><td><strong>Integer</strong> daysBetween(<strong>Date</strong> fromDate, <strong>Date</strong> toDate)</td>
+<td>Retorna un objeto con la cantidad de días entre las dos fechas proveídas</td>
+</tr>
+<tr class="row-even"><td><strong>Date</strong> firstDayOfMonth()</td>
+<td>Retorna la fecha del primer día del mes actual (Con tiempo puesto en 0 en todos los campos)</td>
+</tr>
+<tr class="row-odd"><td><strong>Date</strong> lastDayOfMonth()</td>
+<td>Retorna la fecha del último día del mes actual (Con tiempo puesto en 0 en todos los campos)</td>
+</tr>
+<tr class="row-even"><td><strong>Integer</strong> daysTillEndOfMonth()</td>
+<td>Retorna un objeto con los días que faltan para el final del mes actual</td>
+</tr>
+<tr class="row-odd"><td><strong>Date</strong> subtractDaysFromDate(<strong>Date</strong> date, <strong>int</strong> days)</td>
+<td>Retorna la fecha resultante al restar la cantidad de días proveídos a la fecha proveída (Con tiempo puesto en 0 en todos los campos)</td>
+</tr>
+<tr class="row-even"><td><strong>Date</strong> subtractMonthFromDate(<strong>Date</strong> date, <strong>int</strong> months)</td>
+<td>Retorna la fecha resultante al restar la cantidad de meses proveídos a la fecha proveída (Con tiempo puesto en 0 en todos los campos)</td>
+</tr>
+<tr class="row-odd"><td><strong>Boolean</strong> currentTimeWithin(<strong>Integer</strong> from, <strong>Integer</strong> to)</td>
+<td>Retorna True sólo si es que el tiempo actual se encuentra entre los tiempos proveídos</td>
+</tr>
+<tr class="row-even"><td><strong>Boolean</strong> currentTimeBefore(<strong>Integer</strong> time)</td>
+<td>Retorna True sólo si es que el tiempo actual se encuentra antes que el tiempo proveído</td>
+</tr>
+<tr class="row-odd"><td><strong>Boolean</strong> currentTimeAfter(<strong>Integer</strong> time)</td>
+<td>Retorna True sólo si es que el tiempo actual se encuentra después que el tiempo proveído</td>
+</tr>
+<tr class="row-even"><td><strong>GregorianCalendar</strong> calendarFromHour(<strong>final String</strong> hh)</td>
+<td>Retorna un calendario del tipo GregorianCalendar creado usando la hora proveída con el formato «HH» con valor entre «00» y «29»</td>
+</tr>
+<tr class="row-odd"><td><strong>Date</strong> dateFromHourMinSec(<strong>final String</strong> hhmmss)</td>
+<td>Retorna una fecha sumando la fecha actual con el tiempo pasado en el formato «HH:MM:SS» donde la hora esta entre «00» y «29» y los minutos y segundos entre «00» y «59» (De poner más de 23 horas se ajustara el día de la fecha)</td>
+</tr>
+<tr class="row-even"><td><strong>Boolean</strong> isDay(<strong>DayOfWeek</strong> day)</td>
+<td>Retorna True si el día de la semana actual es igual al proveído (Mirar tipo DayOfWeek definido en java.time)</td>
+</tr>
+<tr class="row-odd"><td><strong>Date</strong> shiftDate(<strong>Date</strong> date, <strong>Integer</strong> seconds, <strong>Integer</strong> minutes, <strong>Integer</strong>  hours, <strong>Integer</strong> days, <strong>Integer</strong> months, <strong>Integer</strong> years, <strong>Boolean</strong> delay)</td>
+<td>Retorna el tipo Date proveído (Fecha y Tiempo) sumándole (Si delay =  False) o restándole (Si delay = True) los demás campos proveídos con sus  respectivos campos del tipo Date</td>
+</tr>
+<tr class="row-even"><td><strong>Date</strong> shiftDate(<strong>Date</strong> date, <strong>Integer</strong> miliseconds, <strong>Integer</strong>  seconds, <strong>Integer</strong> minutes, <strong>Integer</strong>  hours, <strong>Integer</strong> days,  <strong>Integer</strong> months, <strong>Integer</strong> years, <strong>Boolean</strong> delay)</td>
+<td>Retorna el tipo Date proveído (Fecha y Tiempo) sumándole (Si delay =  False) o restándole (Si delay = True) los demás campos proveídos con sus  respectivos campos del tipo Date</td>
+</tr>
+<tr class="row-odd"><td><strong>Date</strong> parseDate(<strong>String</strong> fechaString)</td>
+<td>Usando el formato definido en el string DATE_TIME_FORMAT de la clase JokoConstants se parsea el string proveído para volver or regresar.»&gt;retornar un objeto del tipo Date con los datos obtenidos del string, por defecto el formato de DATE_TIME_FORMAT es «dd/MM/yyyy HH:mm:ss» (Day, Month, Year, Hour, Minute, Second)</td>
+</tr>
+<tr class="row-even"><td><strong>Date</strong> getDateUntilFriday()</td>
+<td>Retorna la fecha y tiempo hasta el viernes siguiente</td>
+</tr>
+<tr class="row-odd"><td><strong>Date</strong> getDateUntilEndOfMonth()</td>
+<td>Retorna la fecha y tiempo hasta el siguiente mes</td>
+</tr>
+<tr class="row-even"><td><strong>Date</strong> getDateUntilEndOfYear()</td>
+<td>Retorna la fecha y tiempo hasta el año siguiente</td>
 </tr>
 </tbody>
 </table>
-<p>Continuaria hasta tener todos!</p>
 </div>
 <div class="section" id="dtoutils-data-transfer-object">
 <h4>DTOUtils (Data Transfer Object)<a class="headerlink" href="#dtoutils-data-transfer-object" title="Enlazar permanentemente con este título">¶</a></h4>
