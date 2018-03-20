@@ -3,6 +3,14 @@ Librerias
 *********
 joko-utils
 ==========
+
+.. data:: USE_FOLDER_AS_CATEGORY = True
+
+   When you don't specify a category in your post metadata, set this setting to
+   ``True``, and organize your articles in subfolders, the subfolder will
+   become the category of your post. If set to ``False``, ``DEFAULT_CATEGORY``
+   will be used as a fallback.
+
 Introducción
 ^^^^^^^^^^^^
 **joko-utils** es una librería para Java que contiene *clases* con utilidades varias de modo a facilitar el trabajo a la hora de trabajar sobre el *Backend* de un proyecto.
