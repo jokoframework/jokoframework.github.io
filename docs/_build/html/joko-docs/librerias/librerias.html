@@ -26,21 +26,21 @@
 
   
   
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   
 
   
-    <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/theme_overrides.css" type="text/css" />
   
 
   
         <link rel="index" title="Índice"
-              href="genindex.html"/>
-        <link rel="search" title="Búsqueda" href="search.html"/>
-    <link rel="top" title="documentación de Joko Framework - " href="index.html"/> 
+              href="../../genindex.html"/>
+        <link rel="search" title="Búsqueda" href="../../search.html"/>
+    <link rel="top" title="documentación de Joko Framework - " href="../../index.html"/> 
 
   
-  <script src="_static/js/modernizr.min.js"></script>
+  <script src="../../_static/js/modernizr.min.js"></script>
 
 </head>
 
@@ -56,7 +56,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> Joko Framework
+            <a href="../../index.html" class="icon icon-home"> Joko Framework
           
 
           
@@ -69,7 +69,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -86,13 +86,42 @@
               
             
             
-              <p class="caption"><span class="caption-text">Documentación</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="librerias/librerias.html">Librerias</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutoriales.html">Tutoriales</a></li>
-<li class="toctree-l1"><a class="reference internal" href="startkits.html">Start-Kits</a></li>
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Librerias</a><ul>
+<li><a class="reference internal" href="#joko-utils">joko-utils</a><ul>
+<li><a class="reference internal" href="#introduccion">Introducción</a></li>
+<li><a class="reference internal" href="#instalacion-o-actualizacion">Instalación o Actualización</a></li>
+<li><a class="reference internal" href="#clases">Clases</a><ul>
+<li><a class="reference internal" href="#jokoconstants">JokoConstants</a></li>
+<li><a class="reference internal" href="#csvutils-csv-comma-seperated-values">CsvUtils (CSV - Comma Seperated Values)</a></li>
+<li><a class="reference internal" href="#dtoutils-data-transfer-object">DTOUtils (Data Transfer Object)</a></li>
+<li><a class="reference internal" href="#encodeutils">EncodeUtils</a></li>
+<li><a class="reference internal" href="#encryptutils">EncryptUtils</a></li>
+<li><a class="reference internal" href="#excelutils">ExcelUtils</a></li>
+<li><a class="reference internal" href="#iputils">IpUtils</a></li>
+<li><a class="reference internal" href="#jokoutilsexception">JokoUtilsException</a></li>
+<li><a class="reference internal" href="#locationutils">LocationUtils</a></li>
+<li><a class="reference internal" href="#loggingutils">LoggingUtils</a></li>
+<li><a class="reference internal" href="#numberutils">NumberUtils</a></li>
+<li><a class="reference internal" href="#pdfgenerator">PdfGenerator</a></li>
+<li><a class="reference internal" href="#reflectionutils">ReflectionUtils</a></li>
+<li><a class="reference internal" href="#txuuidgenerator-universally-unique-identifier">TXUUIDGenerator (Universally Unique IDentifier)</a></li>
 </ul>
-
+</li>
+<li><a class="reference internal" href="#seccion-de-to-do-y-to-fix">Seccion de TO DO y TO FIX</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#joko-security">joko-security</a><ul>
+<li><a class="reference internal" href="#id1">Introducción</a></li>
+<li><a class="reference internal" href="#id2">Instalación o Actualización</a></li>
+<li><a class="reference internal" href="#id3">Clases</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
             
           
         </div>
@@ -105,7 +134,7 @@
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">Joko Framework</a>
+          <a href="../../index.html">Joko Framework</a>
         
       </nav>
 
@@ -133,7 +162,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
         
       <li>Librerias</li>
     
@@ -141,7 +170,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/librerias.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/joko-docs/librerias/librerias.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -229,6 +258,88 @@
 <div class="section" id="csvutils-csv-comma-seperated-values">
 <h4>CsvUtils (CSV - Comma Seperated Values)<a class="headerlink" href="#csvutils-csv-comma-seperated-values" title="Enlazar permanentemente con este título">¶</a></h4>
 <p>Descripción de CsvUtils</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="38%" />
+<col width="62%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Método</th>
+<th class="head">Descripción</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>Date</strong> now()</td>
+<td>Retorna la fecha y tiempo actual</td>
+</tr>
+<tr class="row-odd"><td><strong>Date</strong> today()</td>
+<td>Retorna la fecha y tiempo del día actual</td>
+</tr>
+<tr class="row-even"><td><strong>int</strong> getCurrentMonth()</td>
+<td>Retorna el mes actual como un número</td>
+</tr>
+<tr class="row-odd"><td><strong>int</strong> getCurrentYear()</td>
+<td>Retorna el año actual como un número</td>
+</tr>
+<tr class="row-even"><td><strong>Integer</strong> yearsBetween(<strong>Date</strong> fromDate, <strong>Date</strong> toDate)</td>
+<td>Retorna un objeto con la cantidad de años entre las dos fechas proveídas</td>
+</tr>
+<tr class="row-odd"><td><strong>Integer</strong> daysBetween(<strong>Date</strong> fromDate, <strong>Date</strong> toDate)</td>
+<td>Retorna un objeto con la cantidad de días entre las dos fechas proveídas</td>
+</tr>
+<tr class="row-even"><td><strong>Date</strong> firstDayOfMonth()</td>
+<td>Retorna la fecha del primer día del mes actual (Con tiempo puesto en 0 en todos los campos)</td>
+</tr>
+<tr class="row-odd"><td><strong>Date</strong> lastDayOfMonth()</td>
+<td>Retorna la fecha del último día del mes actual (Con tiempo puesto en 0 en todos los campos)</td>
+</tr>
+<tr class="row-even"><td><strong>Integer</strong> daysTillEndOfMonth()</td>
+<td>Retorna un objeto con los días que faltan para el final del mes actual</td>
+</tr>
+<tr class="row-odd"><td><strong>Date</strong> subtractDaysFromDate(<strong>Date</strong> date, <strong>int</strong> days)</td>
+<td>Retorna la fecha resultante al restar la cantidad de días proveídos a la fecha proveída (Con tiempo puesto en 0 en todos los campos)</td>
+</tr>
+<tr class="row-even"><td><strong>Date</strong> subtractMonthFromDate(<strong>Date</strong> date, <strong>int</strong> months)</td>
+<td>Retorna la fecha resultante al restar la cantidad de meses proveídos a la fecha proveída (Con tiempo puesto en 0 en todos los campos)</td>
+</tr>
+<tr class="row-odd"><td><strong>Boolean</strong> currentTimeWithin(<strong>Integer</strong> from, <strong>Integer</strong> to)</td>
+<td>Retorna True sólo si es que el tiempo actual se encuentra entre los tiempos proveídos</td>
+</tr>
+<tr class="row-even"><td><strong>Boolean</strong> currentTimeBefore(<strong>Integer</strong> time)</td>
+<td>Retorna True sólo si es que el tiempo actual se encuentra antes que el tiempo proveído</td>
+</tr>
+<tr class="row-odd"><td><strong>Boolean</strong> currentTimeAfter(<strong>Integer</strong> time)</td>
+<td>Retorna True sólo si es que el tiempo actual se encuentra después que el tiempo proveído</td>
+</tr>
+<tr class="row-even"><td><strong>GregorianCalendar</strong> calendarFromHour(<strong>final String</strong> hh)</td>
+<td>Retorna un calendario del tipo GregorianCalendar creado usando la hora proveída con el formato «HH» con valor entre «00» y «29»</td>
+</tr>
+<tr class="row-odd"><td><strong>Date</strong> dateFromHourMinSec(<strong>final String</strong> hhmmss)</td>
+<td>Retorna una fecha sumando la fecha actual con el tiempo pasado en el formato «HH:MM:SS» donde la hora esta entre «00» y «29» y los minutos y segundos entre «00» y «59» (De poner más de 23 horas se ajustara el día de la fecha)</td>
+</tr>
+<tr class="row-even"><td><strong>Boolean</strong> isDay(<strong>DayOfWeek</strong> day)</td>
+<td>Retorna True si el día de la semana actual es igual al proveído (Mirar tipo DayOfWeek definido en java.time)</td>
+</tr>
+<tr class="row-odd"><td><strong>Date</strong> shiftDate(<strong>Date</strong> date, <strong>Integer</strong> seconds, <strong>Integer</strong> minutes, <strong>Integer</strong>  hours, <strong>Integer</strong> days, <strong>Integer</strong> months, <strong>Integer</strong> years, <strong>Boolean</strong> delay)</td>
+<td>Retorna el tipo Date proveído (Fecha y Tiempo) sumándole (Si delay =  False) o restándole (Si delay = True) los demás campos proveídos con sus  respectivos campos del tipo Date</td>
+</tr>
+<tr class="row-even"><td><strong>Date</strong> shiftDate(<strong>Date</strong> date, <strong>Integer</strong> miliseconds, <strong>Integer</strong>  seconds, <strong>Integer</strong> minutes, <strong>Integer</strong>  hours, <strong>Integer</strong> days,  <strong>Integer</strong> months, <strong>Integer</strong> years, <strong>Boolean</strong> delay)</td>
+<td>Retorna el tipo Date proveído (Fecha y Tiempo) sumándole (Si delay =  False) o restándole (Si delay = True) los demás campos proveídos con sus  respectivos campos del tipo Date</td>
+</tr>
+<tr class="row-odd"><td><strong>Date</strong> parseDate(<strong>String</strong> fechaString)</td>
+<td>Usando el formato definido en el string DATE_TIME_FORMAT de la clase JokoConstants se parsea el string proveído para volver or regresar.»&gt;retornar un objeto del tipo Date con los datos obtenidos del string, por defecto el formato de DATE_TIME_FORMAT es «dd/MM/yyyy HH:mm:ss» (Day, Month, Year, Hour, Minute, Second)</td>
+</tr>
+<tr class="row-even"><td><strong>Date</strong> getDateUntilFriday()</td>
+<td>Retorna la fecha y tiempo hasta el viernes siguiente</td>
+</tr>
+<tr class="row-odd"><td><strong>Date</strong> getDateUntilEndOfMonth()</td>
+<td>Retorna la fecha y tiempo hasta el siguiente mes</td>
+</tr>
+<tr class="row-even"><td><strong>Date</strong> getDateUntilEndOfYear()</td>
+<td>Retorna la fecha y tiempo hasta el año siguiente</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="dtoutils-data-transfer-object">
 <h4>DTOUtils (Data Transfer Object)<a class="headerlink" href="#dtoutils-data-transfer-object" title="Enlazar permanentemente con este título">¶</a></h4>
@@ -329,7 +440,7 @@ Inicio desde .sql</p>
 
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
+            URL_ROOT:'../../',
             VERSION:'',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
@@ -337,16 +448,16 @@ Inicio desde .sql</p>
             SOURCELINK_SUFFIX: '.txt'
         };
     </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="_static/translations.js"></script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/translations.js"></script>
 
   
 
   
   
-    <script type="text/javascript" src="_static/js/theme.js"></script>
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
   
 
   

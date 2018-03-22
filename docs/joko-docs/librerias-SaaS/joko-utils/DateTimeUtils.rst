@@ -1,64 +1,98 @@
-*********
-Librerias
-*********
-joko-utils
-==========
-
-.. data:: USE_FOLDER_AS_CATEGORY = True
-
-   When you don't specify a category in your post metadata, set this setting to
-   ``True``, and organize your articles in subfolders, the subfolder will
-   become the category of your post. If set to ``False``, ``DEFAULT_CATEGORY``
-   will be used as a fallback.
-
-Introducción
-^^^^^^^^^^^^
-**joko-utils** es una librería para Java que contiene *clases* con utilidades varias de modo a facilitar el trabajo a la hora de trabajar sobre el *Backend* de un proyecto.
-
---------------------------------------------------------------------------
-
-Instalación o Actualización
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Descargar el proyecto en Github:
-	https://github.com/jokoframework/joko-utils
-
---------------------------------------------------------------------------
-
-Clases
-^^^^^^
-JokoConstants
--------------
-Esta clase define las constantes utilizadas en el proyecto
-
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Nombre de la constante        | Uso                                                                                                                                                                                                  |
-+===============================+======================================================================================================================================================================================================+
-| **String** PATTERN_AMOUNT     | -                                                                                                                                                                                                    |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Locale** DEFAULT_LOCALE     | Contiene el Locale a ser utilizado en el proyecto, por defecto  contiene los campos de idioma "es" y de país "PY", donde "es" es el  código del idioma español y "PY" es el código del país Paraguay |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **String[]** MIME_TYPE_PDF    | -                                                                                                                                                                                                    |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **String** PARAGUAY           | Contiene el código aceptado mundialmente para designar a Paraguay                                                                                                                                    |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **String** LOCAL_CURRENCY     | Contiene el código para representar a la moneda local, por defecto es  "Gs" de la moneda paraguaya "Guarani" pluralizada "Guaranies"                                                                 |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **String** PATTERN_QUANTITY   | -                                                                                                                                                                                                    |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **String** DATE_TIME_FORMAT   | Contiene el patrón que sera buscado para obtener la fecha y tiempo de  un String, por defecto "dd/MM/yyyy HH/mm/ss" (En orden de aparición:  Día, Mes, Año, Hora, Minuto y Segundo)                  |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **String** DATE_FORMAT        | Contiene el patrón que sera buscado para obtener la fecha de   un String, por defecto "dd/MM/yyyy" (En orden de aparición:   Día, Mes y Año)                                                         |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **String** LATIN1_CHARSET     | Contiene el código que representa el set de caracteres LATIN 1 "ISO-8859-1"                                                                                                                          |
-+-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-CsvUtils (CSV - Comma Seperated Values)
----------------------------------------
-Descripción de CsvUtils
-
 DateTimeUtils
 -------------
 Esta clase contiene un montón de utilidades para trabajar con fechas y tiempos
+
+.. data:: Date now()
+	
+	Retorna la fecha y tiempo actual.
+
+.. data:: Date today()
+
+	Retorna la fecha y tiempo del día actual.
+
+.. data:: int getCurrentMonth()
+	
+	Retorna el mes actual como un número.
+
+.. data:: int getCurrentYear()
+
+	Retorna el año actual como un número.
+
+.. data:: Integer yearsBetween(Date fromDate, Date toDate) 	
+
+	Retorna un objeto con la cantidad de años entre las dos fechas proveídas.
+
+.. data:: Integer daysBetween(Date fromDate, Date toDate)
+
+	Retorna un objeto con la cantidad de días entre las dos fechas proveídas.
+
+.. data:: Date firstDayOfMonth()
+
+	Retorna la fecha del primer día del mes actual (Con tiempo puesto en 0 en todos los campos).
+
+.. data:: Date lastDayOfMonth()
+	
+	Retorna la fecha del último día del mes actual (Con tiempo puesto en 0 en todos los campos).
+
+.. data:: Integer daysTillEndOfMonth()
+
+	Retorna un objeto con los días que faltan para el final del mes actual.
+
+.. data:: Date subtractDaysFromDate(Date date, int days)
+
+	Retorna la fecha resultante al restar la cantidad de días proveídos a la fecha proveída (Con tiempo puesto en 0 en todos los campos).
+
+.. data:: Date subtractMonthFromDate(Date date, int months)
+
+	Retorna la fecha resultante al restar la cantidad de meses proveídos a la fecha proveída (Con tiempo puesto en 0 en todos los campos).
+
+.. data:: Boolean currentTimeWithin(Integer from, Integer to)
+
+	Retorna ``True`` sólo si es que el tiempo actual se encuentra entre los tiempos proveídos.
+
+.. data:: Boolean currentTimeBefore(Integer time)
+
+	Retorna ``True`` sólo si es que el tiempo actual se encuentra antes que el tiempo proveído.
+
+.. data:: Boolean currentTimeAfter(Integer time)
+	
+	Retorna ``True`` sólo si es que el tiempo actual se encuentra después que el tiempo proveído.
+
+.. data:: GregorianCalendar calendarFromHour(final String hh)
+
+	Retorna un calendario del tipo GregorianCalendar creado usando la hora proveída con el formato "HH" con valor entre "00" y "29".
+
+.. data:: Date dateFromHourMinSec(final String hhmmss)
+
+	Retorna una fecha sumando la fecha actual con el tiempo pasado en el formato "HH:MM:SS" donde la hora esta entre "00" y "29" y los minutos y segundos entre "00" y "59" (De poner más de 23 horas se ajustara el día de la fecha).
+
+.. data:: Boolean isDay(DayOfWeek day)
+
+	Retorna ``True`` si el día de la semana actual es igual al proveído (Mirar tipo DayOfWeek definido en java.time).
+
+.. data:: Date shiftDate(Date date, Integer seconds, Integer minutes, Integer hours, Integer days, Integer months, Integer years, Boolean delay)
+
+	Retorna el tipo Date proveído (Fecha y Tiempo) sumándole (Si delay es ``False``) o restándole (Si delay es ``True``) los demás campos proveídos con sus respectivos campos del tipo Date.
+
+.. data:: Date shiftDate(Date date, Integer miliseconds, Integer seconds, Integer minutes, Integer hours, Integer days, Integer months, Integer years, Boolean delay)
+
+	Retorna el tipo Date proveído (Fecha y Tiempo) sumándole (Si delay es ``False``) o restándole (Si delay es ``True``) los demás campos proveídos con sus respectivos campos del tipo Date.
+
+.. data:: Date parseDate(String fechaString)
+
+	Usando el formato definido en el string DATE_TIME_FORMAT de la clase JokoConstants se parsea el string proveído para volver or regresar.">retornar un objeto del tipo Date con los datos obtenidos del string, por defecto el formato de DATE_TIME_FORMAT es "dd/MM/yyyy HH:mm:ss" (Day, Month, Year, Hour, Minute, Second).
+
+.. data:: Date getDateUntilFriday()
+
+	Retorna la fecha y tiempo hasta el viernes siguiente.
+
+.. data:: Date getDateUntilEndOfMonth()
+
+	Retorna la fecha y tiempo hasta el siguiente mes.
+
+.. data:: Date getDateUntilEndOfYear()
+
+	Retorna la fecha y tiempo hasta el año siguiente.
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Método                                                                                                                                                                                                 | Descripción                                                                                                                                                                                                                                                                                                                     |
@@ -85,21 +119,21 @@ Esta clase contiene un montón de utilidades para trabajar con fechas y tiempos
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Date** subtractMonthFromDate(**Date** date, **int** months)                                                                                                                                          | Retorna la fecha resultante al restar la cantidad de meses proveídos a la fecha proveída (Con tiempo puesto en 0 en todos los campos)                                                                                                                                                                                           |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Boolean** currentTimeWithin(**Integer** from, **Integer** to)                                                                                                                                        | Retorna True sólo si es que el tiempo actual se encuentra entre los tiempos proveídos                                                                                                                                                                                                                                           |
+| **Boolean** currentTimeWithin(**Integer** from, **Integer** to)                                                                                                                                        | Retorna ``True`` sólo si es que el tiempo actual se encuentra entre los tiempos proveídos                                                                                                                                                                                                                                           |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Boolean** currentTimeBefore(**Integer** time)                                                                                                                                                        | Retorna True sólo si es que el tiempo actual se encuentra antes que el tiempo proveído                                                                                                                                                                                                                                          |
+| **Boolean** currentTimeBefore(**Integer** time)                                                                                                                                                        | Retorna ``True`` sólo si es que el tiempo actual se encuentra antes que el tiempo proveído                                                                                                                                                                                                                                          |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Boolean** currentTimeAfter(**Integer** time)                                                                                                                                                         | Retorna True sólo si es que el tiempo actual se encuentra después que el tiempo proveído                                                                                                                                                                                                                                        |
+| **Boolean** currentTimeAfter(**Integer** time)                                                                                                                                                         | Retorna ``True`` sólo si es que el tiempo actual se encuentra después que el tiempo proveído                                                                                                                                                                                                                                        |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **GregorianCalendar** calendarFromHour(**final String** hh)                                                                                                                                            | Retorna un calendario del tipo GregorianCalendar creado usando la hora proveída con el formato "HH" con valor entre "00" y "29"                                                                                                                                                                                                 |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Date** dateFromHourMinSec(**final String** hhmmss)                                                                                                                                                   | Retorna una fecha sumando la fecha actual con el tiempo pasado en el formato "HH:MM:SS" donde la hora esta entre "00" y "29" y los minutos y segundos entre "00" y "59" (De poner más de 23 horas se ajustara el día de la fecha)                                                                                               |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Boolean** isDay(**DayOfWeek** day)                                                                                                                                                                   | Retorna True si el día de la semana actual es igual al proveído (Mirar tipo DayOfWeek definido en java.time)                                                                                                                                                                                                                    |
+| **Boolean** isDay(**DayOfWeek** day)                                                                                                                                                                   | Retorna ``True`` si el día de la semana actual es igual al proveído (Mirar tipo DayOfWeek definido en java.time)                                                                                                                                                                                                                    |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Date** shiftDate(**Date** date, **Integer** seconds, **Integer** minutes, **Integer**  hours, **Integer** days, **Integer** months, **Integer** years, **Boolean** delay)                            | Retorna el tipo Date proveído (Fecha y Tiempo) sumándole (Si delay =  False) o restándole (Si delay = True) los demás campos proveídos con sus  respectivos campos del tipo Date                                                                                                                                                |
+| **Date** shiftDate(**Date** date, **Integer** seconds, **Integer** minutes, **Integer**  hours, **Integer** days, **Integer** months, **Integer** years, **Boolean** delay)                            | Retorna el tipo Date proveído (Fecha y Tiempo) sumándole (Si delay =  ``False``) o restándole (Si delay = ``True``) los demás campos proveídos con sus  respectivos campos del tipo Date                                                                                                                                                |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Date** shiftDate(**Date** date, **Integer** miliseconds, **Integer**  seconds, **Integer** minutes, **Integer**  hours, **Integer** days,  **Integer** months, **Integer** years, **Boolean** delay) | Retorna el tipo Date proveído (Fecha y Tiempo) sumándole (Si delay =  False) o restándole (Si delay = True) los demás campos proveídos con sus  respectivos campos del tipo Date                                                                                                                                                |
+| **Date** shiftDate(**Date** date, **Integer** miliseconds, **Integer**  seconds, **Integer** minutes, **Integer**  hours, **Integer** days,  **Integer** months, **Integer** years, **Boolean** delay) | Retorna el tipo Date proveído (Fecha y Tiempo) sumándole (Si delay =  ``False``) o restándole (Si delay = ``True``) los demás campos proveídos con sus  respectivos campos del tipo Date                                                                                                                                                |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Date** parseDate(**String** fechaString)                                                                                                                                                             | Usando el formato definido en el string DATE_TIME_FORMAT de la clase JokoConstants se parsea el string proveído para volver or regresar.">retornar un objeto del tipo Date con los datos obtenidos del string, por defecto el formato de DATE_TIME_FORMAT es "dd/MM/yyyy HH:mm:ss" (Day, Month, Year, Hour, Minute, Second)     |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -109,69 +143,3 @@ Esta clase contiene un montón de utilidades para trabajar con fechas y tiempos
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Date** getDateUntilEndOfYear()                                                                                                                                                                       | Retorna la fecha y tiempo hasta el año siguiente                                                                                                                                                                                                                                                                                |
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-DTOUtils (Data Transfer Object)
--------------------------------
-
-EncodeUtils
------------
-
-EncryptUtils
-------------
-
-ExcelUtils
-----------
-
-IpUtils
--------
-
-JokoUtilsException
-------------------
-
-LocationUtils
--------------
-
-LoggingUtils
-------------
-
-NumberUtils
------------
-
-PdfGenerator
-------------
-
-ReflectionUtils
----------------
-
-TXUUIDGenerator (Universally Unique IDentifier)
------------------------------------------------
-
-
-Seccion de TO DO y TO FIX
-^^^^^^^^^^^^^^^^^^^^^^^^^
-Lista de cosas por hacer o que se deben mejorar
-
---------------------------------------------------------------------------
-
-joko-security
-=============
-Introducción
-^^^^^^^^^^^^
-Que es, para que se hizo, etc.
-
---------------------------------------------------------------------------
-
-Instalación o Actualización
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**joko-security** necesita un repositorio de datos en el cual se almacenan datos para realizar el proceso de autorización. El sistema utiliza JPA (Java Persistence API) de una manera bastante agnóstica a la BD. Sin embargo, actualmente solamente está probado con PostgreSQL 9.3
-
-**Observación**: Favor referir a la guia de upgrade para actualizar desde la versión 0.1.4. Y primero leer los cambios que se introdujeron a partir de la versión 0.1.5.
-Inicio desde .sql
-
-El inicio mas sencillo es correr el script .sql correspondiente a la BD que utiliza. Estos scripts se encuentran en /db/sql-initialization
-
---------------------------------------------------------------------------
-
-Clases
-^^^^^^
-Clases y Funcionalidades
