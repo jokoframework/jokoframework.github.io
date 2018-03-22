@@ -1,7 +1,7 @@
 
 
 *************************
-Que es el J Framework?
+Que es el Joko Framework?
 *************************
 Joko es un framework basado en Spring Boot y proyectos lightweighted JavaScript, HTML5 y CSS3 de modo que contiene una cantidad de proyectos para ayudar en el desarrollo de software orientado a aplicaciones web y mobile.
 
@@ -15,11 +15,6 @@ Los proyectos que se encuentran actualmente en el framework son de alguno de los
 .. toctree::
    :maxdepth: 1
    :caption: Documentación
-
-   /joko-docs/librerias-SaaS/librerias-SaaS.rst
-   /joko-docs/start-kits/start-kits.rst
-   /joko-docs/tutoriales/tutoriales.rst
-
 
 --------------------------------------------------------------------------
 
