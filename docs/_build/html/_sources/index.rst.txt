@@ -17,8 +17,9 @@ Los proyectos que se encuentran actualmente en el framework son de alguno de los
    :caption: Documentación
 
    /joko-docs/librerias-SaaS/librerias-SaaS.rst
-   /joko-docs/tutoriales/tutoriales.rst
    /joko-docs/start-kits/start-kits.rst
+   /joko-docs/tutoriales/tutoriales.rst
+
 
 --------------------------------------------------------------------------
 
