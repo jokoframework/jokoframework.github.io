@@ -2,8 +2,6 @@ JokoConstants
 -------------
 Esta clase define las constantes utilizadas en el proyecto
 
-..highlight::
-
 .. data:: String PATTERN_AMOUNT
 
 	().

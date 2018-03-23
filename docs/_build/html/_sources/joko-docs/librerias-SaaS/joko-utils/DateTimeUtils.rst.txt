@@ -78,13 +78,20 @@ Esta clase contiene un montón de utilidades para trabajar con fechas y tiempos
 
 	Retorna el tipo Date proveído (Fecha y Tiempo) sumándole (Si delay es ``False``) o restándole (Si delay es ``True``) los demás campos proveídos con sus respectivos campos del tipo Date.
 
-.. data:: Date parseDate(String fechaString)
+.. data:: Date parseDate(String fechaString)	
 
 	Usando el formato definido en el string DATE_TIME_FORMAT de la clase JokoConstants se analiza el string proveído para retornar un objeto del tipo Date con los datos obtenidos del string, por defecto el formato definido por DATE_TIME_FORMAT es ``dd/MM/yyyy HH:mm:ss`` (Day, Month, Year, Hour, Minute, Second).
 
 .. data:: Date getDateUntilFriday()
 
 	Retorna la fecha y tiempo hasta el viernes siguiente.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Heya 	                                                                                                                                                                                                            |
++===================================================================================================================================================================================================================+
+| ikpbnheofikbnpoeikfrsdnjvmpoikrnhtjfgmvolijkjntfsodgilkvnoetiklrfjdgmvpiketnjhfbopikljtrnmfoglikvjnmetos jvlkdjsavlkxnjvoeikjsldnmvoilknheofrsdklgjnfmcoierkjlvmovieklrjngvonroeinsoifbnoaidnboiadfnboiadnfboi    |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
 
 .. data:: Date getDateUntilEndOfMonth()
 
