@@ -12,7 +12,7 @@ Introducción
 
 Instalación o Actualización
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Descargar el proyecto en Github:
+Descargar la libreria de Github:
 	https://github.com/jokoframework/joko-utils
 
 --------------------------------------------------------------------------
