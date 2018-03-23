@@ -30,8 +30,6 @@
   
 
   
-    <link rel="stylesheet" href="../../../_static/theme_overrides.css" type="text/css" />
-  
 
   
         <link rel="index" title="Índice"
@@ -156,153 +154,153 @@
             
   <div class="section" id="datetimeutils">
 <h1>DateTimeUtils<a class="headerlink" href="#datetimeutils" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>Esta clase contiene un montón de utilidades para trabajar con fechas y tiempos</p>
-<dl class="data">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span class="n">Espieruohvnbepioufjhnbiuorejhngviujerklnviujehrfndbviouejrhgnvta</span> <span class="n">clase</span> <span class="n">contiene</span> <span class="n">un</span> <span class="n">montón</span> <span class="n">de</span> <span class="n">utilidades</span> <span class="n">para</span> <span class="n">trabajar</span> <span class="n">con</span> <span class="n">fechas</span> <span class="n">y</span> <span class="n">tiempos</span>
+</pre></div>
+</div>
+<dl class="function">
+<dt>
+<code class="descname">Date now()</code></dt>
+<dd><p>Esta clase contiene un montón de utilidades para trabajar con fechas y tiempos</p>
+</dd></dl>
+
+<dl class="function">
 <dt>
 <code class="descname">Date now()</code></dt>
 <dd><p>Retorna la fecha y tiempo actual.</p>
 </dd></dl>
 
-<dl class="data">
+<dl class="function">
 <dt>
 <code class="descname">Date today()</code></dt>
 <dd><p>Retorna la fecha y tiempo del día actual.</p>
 </dd></dl>
 
-<dl class="data">
+<dl class="function">
 <dt>
 <code class="descname">int getCurrentMonth()</code></dt>
 <dd><p>Retorna el mes actual como un número.</p>
 </dd></dl>
 
-<dl class="data">
+<dl class="function">
 <dt>
 <code class="descname">int getCurrentYear()</code></dt>
 <dd><p>Retorna el año actual como un número.</p>
 </dd></dl>
 
-<dl class="data">
+<dl class="function">
 <dt>
 <code class="descname">Integer yearsBetween(Date fromDate, Date toDate)</code></dt>
 <dd><p>Retorna un objeto con la cantidad de años entre las dos fechas proveídas.</p>
 </dd></dl>
 
-<dl class="data">
+<dl class="function">
 <dt>
 <code class="descname">Integer daysBetween(Date fromDate, Date toDate)</code></dt>
 <dd><p>Retorna un objeto con la cantidad de días entre las dos fechas proveídas.</p>
 </dd></dl>
 
-<dl class="data">
+<dl class="function">
 <dt>
 <code class="descname">Date firstDayOfMonth()</code></dt>
 <dd><p>Retorna la fecha del primer día del mes actual (Con tiempo puesto en 0 en todos los campos).</p>
 </dd></dl>
 
-<dl class="data">
+<dl class="function">
 <dt>
 <code class="descname">Date lastDayOfMonth()</code></dt>
 <dd><p>Retorna la fecha del último día del mes actual (Con tiempo puesto en 0 en todos los campos).</p>
 </dd></dl>
 
-<dl class="data">
+<dl class="function">
 <dt>
 <code class="descname">Integer daysTillEndOfMonth()</code></dt>
 <dd><p>Retorna un objeto con los días que faltan para el final del mes actual.</p>
 </dd></dl>
 
-<dl class="data">
+<dl class="function">
 <dt>
 <code class="descname">Date subtractDaysFromDate(Date date, int days)</code></dt>
 <dd><p>Retorna la fecha resultante al restar la cantidad de días proveídos a la fecha proveída (Con tiempo puesto en 0 en todos los campos).</p>
 </dd></dl>
 
-<dl class="data">
+<dl class="function">
 <dt>
 <code class="descname">Date subtractMonthFromDate(Date date, int months)</code></dt>
 <dd><p>Retorna la fecha resultante al restar la cantidad de meses proveídos a la fecha proveída (Con tiempo puesto en 0 en todos los campos).</p>
 </dd></dl>
 
-<dl class="data">
+<dl class="function">
 <dt>
 <code class="descname">Boolean currentTimeWithin(Integer from, Integer to)</code></dt>
 <dd><p>Retorna <code class="docutils literal notranslate"><span class="pre">True</span></code> sólo si es que el tiempo actual se encuentra entre los tiempos proveídos.</p>
 </dd></dl>
 
-<dl class="data">
+<dl class="function">
 <dt>
 <code class="descname">Boolean currentTimeBefore(Integer time)</code></dt>
 <dd><p>Retorna <code class="docutils literal notranslate"><span class="pre">True</span></code> sólo si es que el tiempo actual se encuentra antes que el tiempo proveído.</p>
 </dd></dl>
 
-<dl class="data">
+<dl class="function">
 <dt>
 <code class="descname">Boolean currentTimeAfter(Integer time)</code></dt>
 <dd><p>Retorna <code class="docutils literal notranslate"><span class="pre">True</span></code> sólo si es que el tiempo actual se encuentra después que el tiempo proveído.</p>
 </dd></dl>
 
-<dl class="data">
+<dl class="function">
 <dt>
 <code class="descname">GregorianCalendar calendarFromHour(final String hh)</code></dt>
 <dd><p>Retorna un calendario del tipo GregorianCalendar creado usando la hora proveída con el formato <code class="docutils literal notranslate"><span class="pre">HH</span></code> con valor entre <code class="docutils literal notranslate"><span class="pre">00</span></code> y <code class="docutils literal notranslate"><span class="pre">29</span></code>.</p>
 </dd></dl>
 
-<dl class="data">
+<dl class="function">
 <dt>
 <code class="descname">Date dateFromHourMinSec(final String hhmmss)</code></dt>
 <dd><p>Retorna una fecha sumando la fecha actual con el tiempo pasado en el formato <code class="docutils literal notranslate"><span class="pre">HH:MM:SS</span></code> donde la hora esta entre <code class="docutils literal notranslate"><span class="pre">00</span></code> y <code class="docutils literal notranslate"><span class="pre">29</span></code> y los minutos y segundos entre <code class="docutils literal notranslate"><span class="pre">00</span></code> y <code class="docutils literal notranslate"><span class="pre">59</span></code> (De poner más de 23 horas se ajustara el día de la fecha).</p>
 </dd></dl>
 
-<dl class="data">
+<dl class="function">
 <dt>
 <code class="descname">Boolean isDay(DayOfWeek day)</code></dt>
 <dd><p>Retorna <code class="docutils literal notranslate"><span class="pre">True</span></code> si el día de la semana actual es igual al proveído (Mirar tipo DayOfWeek definido en java.time).</p>
 </dd></dl>
 
-<dl class="data">
+<dl class="function">
+<dt>
+<code class="descname">Date shiftDate(Date date, Integer seconds, Integer minutes, Integer hours, Integer days, Integer months, Integer years, Boolean delay)</code></dt>
+<dd></dd></dl>
+
+<dl class="function">
 <dt>
 <code class="descname">Date shiftDate(Date date, Integer seconds, Integer minutes, Integer hours, Integer days, Integer months, Integer years, Boolean delay)</code></dt>
 <dd><p>Retorna el tipo Date proveído (Fecha y Tiempo) sumándole (Si delay es <code class="docutils literal notranslate"><span class="pre">False</span></code>) o restándole (Si delay es <code class="docutils literal notranslate"><span class="pre">True</span></code>) los demás campos proveídos con sus respectivos campos del tipo Date.</p>
 </dd></dl>
 
-<dl class="data">
+<dl class="function">
 <dt>
 <code class="descname">Date shiftDate(Date date, Integer miliseconds, Integer seconds, Integer minutes, Integer hours, Integer days, Integer months, Integer years, Boolean delay)</code></dt>
 <dd><p>Retorna el tipo Date proveído (Fecha y Tiempo) sumándole (Si delay es <code class="docutils literal notranslate"><span class="pre">False</span></code>) o restándole (Si delay es <code class="docutils literal notranslate"><span class="pre">True</span></code>) los demás campos proveídos con sus respectivos campos del tipo Date.</p>
 </dd></dl>
 
-<dl class="data">
+<dl class="function">
 <dt>
 <code class="descname">Date parseDate(String fechaString)</code></dt>
 <dd><p>Usando el formato definido en el string DATE_TIME_FORMAT de la clase JokoConstants se analiza el string proveído para retornar un objeto del tipo Date con los datos obtenidos del string, por defecto el formato definido por DATE_TIME_FORMAT es <code class="docutils literal notranslate"><span class="pre">dd/MM/yyyy</span> <span class="pre">HH:mm:ss</span></code> (Day, Month, Year, Hour, Minute, Second).</p>
 </dd></dl>
 
-<dl class="data">
+<dl class="function">
 <dt>
 <code class="descname">Date getDateUntilFriday()</code></dt>
 <dd><p>Retorna la fecha y tiempo hasta el viernes siguiente.</p>
 </dd></dl>
 
-<table border="1" class="docutils">
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Heya</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td>ikpbnheofikbnpoeikfrsdnjvmpoikrnhtjfgmvolijkjntfsodgilkvnoetiklrfjdgmvpiketnjhfbopikljtrnmfoglikvjnmetos jvlkdjsavlkxnjvoeikjsldnmvoilknheofrsdklgjnfmcoierkjlvmovieklrjngvonroeinsoifbnoaidnboiadfnboiadnfboi</td>
-</tr>
-</tbody>
-</table>
-<dl class="data">
+<dl class="function">
 <dt>
 <code class="descname">Date getDateUntilEndOfMonth()</code></dt>
 <dd><p>Retorna la fecha y tiempo hasta el siguiente mes.</p>
 </dd></dl>
 
-<dl class="data">
+<dl class="function">
 <dt>
 <code class="descname">Date getDateUntilEndOfYear()</code></dt>
 <dd><p>Retorna la fecha y tiempo hasta el año siguiente.</p>
