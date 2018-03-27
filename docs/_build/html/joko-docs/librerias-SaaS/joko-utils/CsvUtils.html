@@ -86,7 +86,7 @@
             
               <p class="caption"><span class="caption-text">Documentación</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../librerias-SaaS.html">Librerias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../librerias-SaaS.html">Librerías</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../start-kits/start-kits.html">Start-Kits</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../tutoriales/tutoriales.html">Tutoriales</a></li>
 </ul>
@@ -154,15 +154,29 @@
             
   <div class="section" id="csvutils-csv-comma-seperated-values">
 <h1>CsvUtils (CSV - Comma Seperated Values)<a class="headerlink" href="#csvutils-csv-comma-seperated-values" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>Contiene utilidades a la hora interactuar con el formato CSV</p>
+<p>Ejemplo del método <strong>convertToCsv</strong></p>
+<p>Los Inputs:</p>
+<ul>
+<li><p class="first">Una lista de tipo indefinido que tendra objetos de la misma clase y cuya clase tenga las propiedad de ser serializable.</p>
+</li>
+<li><p class="first">Una lista de Strings donde cada elemento es el nombre de una columna del texto CSV así como el nombre del atributo del objeto cuyo Getter se llamara (Como vera en el ejemplo no es Case-Sensitive).</p>
+</li>
+<li><p class="first">La clase de la lista de objetos.</p>
 <blockquote>
-<div><dl class="data">
-<dt>
-<code class="descname">Método</code></dt>
-<dd><p>Descripción de Método</p>
-</dd></dl>
-
+<div><p>Para el ejemplo usaremos la siguiente clase para nuestra lista de objetos, haciendo que sea serializable así como definiendo los Getters para usar los atributos:</p>
 </div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../../../_images/convertToCsvEj1.png"><img alt="../../../_images/convertToCsvEj1.png" src="../../../_images/convertToCsvEj1.png" style="width: 677.0px; height: 252.0px;" /></a>
+<p>Generamos los Objetos en este caso para luego crear las listas, llamar al método y escribir en un archivo el resultado:</p>
+<a class="reference internal image-reference" href="../../../_images/convertToCsvEj2.png"><img alt="../../../_images/convertToCsvEj2.png" src="../../../_images/convertToCsvEj2.png" style="width: 981.0px; height: 504.0px;" /></a>
+<p>El archivo generado por el ejemplo:</p>
+<a class="reference internal image-reference" href="../../../_images/convertToCsvEj3.png"><img alt="../../../_images/convertToCsvEj3.png" src="../../../_images/convertToCsvEj3.png" style="width: 303.0px; height: 102.0px;" /></a>
+<p>Algunos datos extra:</p>
+<ul class="simple">
+<li>El orden de la lista de cabeceras define el orden de columnas del archivo final</li>
+<li>Si no existe Getter para cierta cabecera definida se rellenara la columna con valores vacíos</li>
+</ul>
 </div>
 
 

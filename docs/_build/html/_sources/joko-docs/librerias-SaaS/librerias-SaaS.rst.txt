@@ -1,5 +1,5 @@
 *********
-Librerias
+Librerías
 *********
 joko-utils
 ==========
@@ -12,57 +12,20 @@ Introducción
 
 Instalación o Actualización
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Descargar la libreria de Github:
+Descargar la librería de Github:
 	https://github.com/jokoframework/joko-utils
 
 --------------------------------------------------------------------------
 
-Clases
-^^^^^^
-.. include:: /joko-docs/librerias-SaaS/joko-utils/JokoConstants.rst
-
+Ejemplos de Métodos
+^^^^^^^^^^^^^^^^^^^
 .. include:: /joko-docs/librerias-SaaS/joko-utils/CsvUtils.rst
 
-.. include:: /joko-docs/librerias-SaaS/joko-utils/DateTimeUtils.rst
+Versiones
+^^^^^^^^^
+Las versiones y releases
 
-DTOUtils (Data Transfer Object)
--------------------------------
-
-EncodeUtils
------------
-
-EncryptUtils
-------------
-
-ExcelUtils
-----------
-
-IpUtils
--------
-
-JokoUtilsException
-------------------
-
-LocationUtils
--------------
-
-LoggingUtils
-------------
-
-NumberUtils
------------
-
-PdfGenerator
-------------
-
-ReflectionUtils
----------------
-
-TXUUIDGenerator (Universally Unique IDentifier)
------------------------------------------------
-
-
-Seccion de TO DO y TO FIX
+Sección de TO DO y TO FIX
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 Lista de cosas por hacer o que se deben mejorar
 
