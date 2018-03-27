@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Librerias &mdash; documentación de Joko Framework - </title>
+  <title>Librerías &mdash; documentación de Joko Framework - </title>
   
 
   
@@ -88,35 +88,22 @@
             
               <p class="caption"><span class="caption-text">Documentación</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Librerias</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Librerías</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#joko-utils">joko-utils</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#introduccion">Introducción</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#instalacion-o-actualizacion">Instalación o Actualización</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#clases">Clases</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#jokoconstants">JokoConstants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ejemplos-de-metodos">Ejemplos de Métodos</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#csvutils-csv-comma-seperated-values">CsvUtils (CSV - Comma Seperated Values)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#datetimeutils">DateTimeUtils</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#dtoutils-data-transfer-object">DTOUtils (Data Transfer Object)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#encodeutils">EncodeUtils</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#encryptutils">EncryptUtils</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#excelutils">ExcelUtils</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#iputils">IpUtils</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#jokoutilsexception">JokoUtilsException</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#locationutils">LocationUtils</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#loggingutils">LoggingUtils</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#numberutils">NumberUtils</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#pdfgenerator">PdfGenerator</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#reflectionutils">ReflectionUtils</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#txuuidgenerator-universally-unique-identifier">TXUUIDGenerator (Universally Unique IDentifier)</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#seccion-de-to-do-y-to-fix">Seccion de TO DO y TO FIX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#versiones">Versiones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#seccion-de-to-do-y-to-fix">Sección de TO DO y TO FIX</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#joko-security">joko-security</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id1">Introducción</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id2">Instalación o Actualización</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">Clases</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#clases">Clases</a></li>
 </ul>
 </li>
 </ul>
@@ -167,7 +154,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>Librerias</li>
+      <li>Librerías</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -196,7 +183,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="librerias">
-<h1>Librerias<a class="headerlink" href="#librerias" title="Enlazar permanentemente con este título">¶</a></h1>
+<h1>Librerías<a class="headerlink" href="#librerias" title="Enlazar permanentemente con este título">¶</a></h1>
 <div class="section" id="joko-utils">
 <h2>joko-utils<a class="headerlink" href="#joko-utils" title="Enlazar permanentemente con este título">¶</a></h2>
 <div class="section" id="introduccion">
@@ -207,273 +194,46 @@
 <div class="section" id="instalacion-o-actualizacion">
 <h3>Instalación o Actualización<a class="headerlink" href="#instalacion-o-actualizacion" title="Enlazar permanentemente con este título">¶</a></h3>
 <dl class="docutils">
-<dt>Descargar la libreria de Github:</dt>
+<dt>Descargar la librería de Github:</dt>
 <dd><a class="reference external" href="https://github.com/jokoframework/joko-utils">https://github.com/jokoframework/joko-utils</a></dd>
 </dl>
 </div>
 <hr class="docutils" />
-<div class="section" id="clases">
-<h3>Clases<a class="headerlink" href="#clases" title="Enlazar permanentemente con este título">¶</a></h3>
-<div class="section" id="jokoconstants">
-<h4>JokoConstants<a class="headerlink" href="#jokoconstants" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Contiene las constantes utilizadas por múltiples clases en el proyecto</p>
-<blockquote>
-<div><dl class="function">
-<dt>
-<code class="descname">String PATTERN_AMOUNT</code></dt>
-<dd><p>().</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">Locale DEFAULT_LOCALE</code></dt>
-<dd><p>Contiene el Locale a ser utilizado en el proyecto, por defecto contiene los campos de idioma <code class="docutils literal notranslate"><span class="pre">es</span></code> y de país <code class="docutils literal notranslate"><span class="pre">PY</span></code>, donde <code class="docutils literal notranslate"><span class="pre">es</span></code> es el código del idioma español y <code class="docutils literal notranslate"><span class="pre">PY</span></code> es el código del país Paraguay.</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">String[] MIME_TYPE_PDF</code></dt>
-<dd><p>().</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">String PARAGUAY</code></dt>
-<dd><p>Contiene el código aceptado mundialmente para designar a Paraguay <code class="docutils literal notranslate"><span class="pre">PY</span></code>.</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">String LOCAL_CURRENCY</code></dt>
-<dd><p>Contiene el código para representar a la moneda local, por defecto es <code class="docutils literal notranslate"><span class="pre">Gs</span></code> de la moneda paraguaya <code class="docutils literal notranslate"><span class="pre">Guarani</span></code> pluralizada <code class="docutils literal notranslate"><span class="pre">Guaranies</span></code>.</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">String PATTERN_QUANTITY</code></dt>
-<dd><p>().</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">String DATE_TIME_FORMAT</code></dt>
-<dd><p>Contiene el patrón que sera buscado para obtener una fecha y tiempo de un String, por defecto <code class="docutils literal notranslate"><span class="pre">dd/MM/yyyy</span> <span class="pre">HH/mm/ss</span></code> (En orden de aparición: Día, Mes, Año, Hora, Minuto y Segundo).</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">String DATE_FORMAT</code></dt>
-<dd><p>Contiene el patrón que sera buscado para obtener una fecha de un String, por defecto <code class="docutils literal notranslate"><span class="pre">dd/MM/yyyy</span></code> (En orden de aparición: Día, Mes y Año).</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">String LATIN1_CHARSET</code></dt>
-<dd><p>Contiene el código <code class="docutils literal notranslate"><span class="pre">ISO-8859-1</span></code> que representa un grupo de caracteres, también conocido como el grupo de caracteres <code class="docutils literal notranslate"><span class="pre">LATIN</span> <span class="pre">1</span></code>.</p>
-</dd></dl>
-
-</div></blockquote>
-</div>
+<div class="section" id="ejemplos-de-metodos">
+<h3>Ejemplos de Métodos<a class="headerlink" href="#ejemplos-de-metodos" title="Enlazar permanentemente con este título">¶</a></h3>
 <div class="section" id="csvutils-csv-comma-seperated-values">
 <h4>CsvUtils (CSV - Comma Seperated Values)<a class="headerlink" href="#csvutils-csv-comma-seperated-values" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Contiene utilidades a la hora interactuar con el formato CSV</p>
+<p>Ejemplo del método <strong>convertToCsv</strong></p>
+<p>Los Inputs:</p>
+<ul>
+<li><p class="first">Una lista de tipo indefinido que tendra objetos de la misma clase y cuya clase tenga las propiedad de ser serializable.</p>
+</li>
+<li><p class="first">Una lista de Strings donde cada elemento es el nombre de una columna del texto CSV así como el nombre del atributo del objeto cuyo Getter se llamara (Como vera en el ejemplo no es Case-Sensitive).</p>
+</li>
+<li><p class="first">La clase de la lista de objetos.</p>
 <blockquote>
-<div><dl class="data">
-<dt>
-<code class="descname">Método</code></dt>
-<dd><p>Descripción de Método</p>
-</dd></dl>
-
+<div><p>Para el ejemplo usaremos la siguiente clase para nuestra lista de objetos, haciendo que sea serializable así como definiendo los Getters para usar los atributos:</p>
 </div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="../../_images/convertToCsvEj1.png"><img alt="../../_images/convertToCsvEj1.png" src="../../_images/convertToCsvEj1.png" style="width: 677.0px; height: 252.0px;" /></a>
+<p>Generamos los Objetos en este caso para luego crear las listas, llamar al método y escribir en un archivo el resultado:</p>
+<a class="reference internal image-reference" href="../../_images/convertToCsvEj2.png"><img alt="../../_images/convertToCsvEj2.png" src="../../_images/convertToCsvEj2.png" style="width: 981.0px; height: 504.0px;" /></a>
+<p>El archivo generado por el ejemplo:</p>
+<a class="reference internal image-reference" href="../../_images/convertToCsvEj3.png"><img alt="../../_images/convertToCsvEj3.png" src="../../_images/convertToCsvEj3.png" style="width: 303.0px; height: 102.0px;" /></a>
+<p>Algunos datos extra:</p>
+<ul class="simple">
+<li>El orden de la lista de cabeceras define el orden de columnas del archivo final</li>
+<li>Si no existe Getter para cierta cabecera definida se rellenara la columna con valores vacíos</li>
+</ul>
 </div>
-<div class="section" id="datetimeutils">
-<h4>DateTimeUtils<a class="headerlink" href="#datetimeutils" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Contiene un montón de utilidades para trabajar con fechas y tiempos</p>
-<blockquote>
-<div><dl class="function">
-<dt>
-<code class="descname">Date now()</code></dt>
-<dd><p>Retorna la fecha y tiempo actual.</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">Date today()</code></dt>
-<dd><p>Retorna la fecha y tiempo del día actual.</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">int getCurrentMonth()</code></dt>
-<dd><p>Retorna el mes actual como un número.</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">int getCurrentYear()</code></dt>
-<dd><p>Retorna el año actual como un número.</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">Integer yearsBetween(Date fromDate, Date toDate)</code></dt>
-<dd><p>Retorna un objeto con la cantidad de años entre las dos fechas proveídas.</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">Integer daysBetween(Date fromDate, Date toDate)</code></dt>
-<dd><p>Retorna un objeto con la cantidad de días entre las dos fechas proveídas.</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">Date firstDayOfMonth()</code></dt>
-<dd><p>Retorna la fecha del primer día del mes actual (Con tiempo puesto en 0 en todos los campos).</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">Date lastDayOfMonth()</code></dt>
-<dd><p>Retorna la fecha del último día del mes actual (Con tiempo puesto en 0 en todos los campos).</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">Integer daysTillEndOfMonth()</code></dt>
-<dd><p>Retorna un objeto con los días que faltan para el final del mes actual.</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">Date subtractDaysFromDate(Date date, int days)</code></dt>
-<dd><p>Retorna la fecha resultante al restar la cantidad de días proveídos a la fecha proveída (Con tiempo puesto en 0 en todos los campos).</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">Date subtractMonthFromDate(Date date, int months)</code></dt>
-<dd><p>Retorna la fecha resultante al restar la cantidad de meses proveídos a la fecha proveída (Con tiempo puesto en 0 en todos los campos).</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">Boolean currentTimeWithin(Integer from, Integer to)</code></dt>
-<dd><p>Retorna <code class="docutils literal notranslate"><span class="pre">True</span></code> sólo si es que el tiempo actual se encuentra entre los tiempos proveídos.</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">Boolean currentTimeBefore(Integer time)</code></dt>
-<dd><p>Retorna <code class="docutils literal notranslate"><span class="pre">True</span></code> sólo si es que el tiempo actual se encuentra antes que el tiempo proveído.</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">Boolean currentTimeAfter(Integer time)</code></dt>
-<dd><p>Retorna <code class="docutils literal notranslate"><span class="pre">True</span></code> sólo si es que el tiempo actual se encuentra después que el tiempo proveído.</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">GregorianCalendar calendarFromHour(final String hh)</code></dt>
-<dd><p>Retorna un calendario del tipo GregorianCalendar creado usando la hora proveída con el formato <code class="docutils literal notranslate"><span class="pre">HH</span></code> con valor entre <code class="docutils literal notranslate"><span class="pre">00</span></code> y <code class="docutils literal notranslate"><span class="pre">29</span></code>.</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">Date dateFromHourMinSec(final String hhmmss)</code></dt>
-<dd><p>Retorna una fecha sumando la fecha actual con el tiempo pasado en el formato <code class="docutils literal notranslate"><span class="pre">HH:MM:SS</span></code> donde la hora esta entre <code class="docutils literal notranslate"><span class="pre">00</span></code> y <code class="docutils literal notranslate"><span class="pre">29</span></code> y los minutos y segundos entre <code class="docutils literal notranslate"><span class="pre">00</span></code> y <code class="docutils literal notranslate"><span class="pre">59</span></code> (De poner más de 23 horas se ajustara el día de la fecha).</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">Boolean isDay(DayOfWeek day)</code></dt>
-<dd><p>Retorna <code class="docutils literal notranslate"><span class="pre">True</span></code> si el día de la semana actual es igual al proveído (Mirar tipo DayOfWeek definido en java.time).</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">Date shiftDate(Date date, Integer seconds, Integer minutes, Integer hours, Integer days, Integer months, Integer years, Boolean delay)</code></dt>
-<dd></dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">Date shiftDate(Date date, Integer seconds, Integer minutes, Integer hours, Integer days, Integer months, Integer years, Boolean delay)</code></dt>
-<dd><p>Retorna el tipo Date proveído (Fecha y Tiempo) sumándole (Si delay es <code class="docutils literal notranslate"><span class="pre">False</span></code>) o restándole (Si delay es <code class="docutils literal notranslate"><span class="pre">True</span></code>) los demás campos proveídos con sus respectivos campos del tipo Date.</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">Date shiftDate(Date date, Integer miliseconds, Integer seconds, Integer minutes, Integer hours, Integer days, Integer months, Integer years, Boolean delay)</code></dt>
-<dd><p>Retorna el tipo Date proveído (Fecha y Tiempo) sumándole (Si delay es <code class="docutils literal notranslate"><span class="pre">False</span></code>) o restándole (Si delay es <code class="docutils literal notranslate"><span class="pre">True</span></code>) los demás campos proveídos con sus respectivos campos del tipo Date.</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">Date parseDate(String fechaString)</code></dt>
-<dd><p>Usando el formato definido en el string DATE_TIME_FORMAT de la clase JokoConstants se analiza el string proveído para retornar un objeto del tipo Date con los datos obtenidos del string, por defecto el formato definido por DATE_TIME_FORMAT es <code class="docutils literal notranslate"><span class="pre">dd/MM/yyyy</span> <span class="pre">HH:mm:ss</span></code> (Day, Month, Year, Hour, Minute, Second).</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">Date getDateUntilFriday()</code></dt>
-<dd><p>Retorna la fecha y tiempo hasta el viernes siguiente.</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">Date getDateUntilEndOfMonth()</code></dt>
-<dd><p>Retorna la fecha y tiempo hasta el siguiente mes.</p>
-</dd></dl>
-
-<dl class="function">
-<dt>
-<code class="descname">Date getDateUntilEndOfYear()</code></dt>
-<dd><p>Retorna la fecha y tiempo hasta el año siguiente.</p>
-</dd></dl>
-
-</div></blockquote>
 </div>
-<div class="section" id="dtoutils-data-transfer-object">
-<h4>DTOUtils (Data Transfer Object)<a class="headerlink" href="#dtoutils-data-transfer-object" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="encodeutils">
-<h4>EncodeUtils<a class="headerlink" href="#encodeutils" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="encryptutils">
-<h4>EncryptUtils<a class="headerlink" href="#encryptutils" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="excelutils">
-<h4>ExcelUtils<a class="headerlink" href="#excelutils" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="iputils">
-<h4>IpUtils<a class="headerlink" href="#iputils" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="jokoutilsexception">
-<h4>JokoUtilsException<a class="headerlink" href="#jokoutilsexception" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="locationutils">
-<h4>LocationUtils<a class="headerlink" href="#locationutils" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="loggingutils">
-<h4>LoggingUtils<a class="headerlink" href="#loggingutils" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="numberutils">
-<h4>NumberUtils<a class="headerlink" href="#numberutils" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="pdfgenerator">
-<h4>PdfGenerator<a class="headerlink" href="#pdfgenerator" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="reflectionutils">
-<h4>ReflectionUtils<a class="headerlink" href="#reflectionutils" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
-<div class="section" id="txuuidgenerator-universally-unique-identifier">
-<h4>TXUUIDGenerator (Universally Unique IDentifier)<a class="headerlink" href="#txuuidgenerator-universally-unique-identifier" title="Enlazar permanentemente con este título">¶</a></h4>
-</div>
+<div class="section" id="versiones">
+<h3>Versiones<a class="headerlink" href="#versiones" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Las versiones y releases</p>
 </div>
 <div class="section" id="seccion-de-to-do-y-to-fix">
-<h3>Seccion de TO DO y TO FIX<a class="headerlink" href="#seccion-de-to-do-y-to-fix" title="Enlazar permanentemente con este título">¶</a></h3>
+<h3>Sección de TO DO y TO FIX<a class="headerlink" href="#seccion-de-to-do-y-to-fix" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Lista de cosas por hacer o que se deben mejorar</p>
 </div>
 </div>
@@ -493,8 +253,8 @@ Inicio desde .sql</p>
 <p>El inicio mas sencillo es correr el script .sql correspondiente a la BD que utiliza. Estos scripts se encuentran en /db/sql-initialization</p>
 </div>
 <hr class="docutils" />
-<div class="section" id="id3">
-<h3>Clases<a class="headerlink" href="#id3" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="clases">
+<h3>Clases<a class="headerlink" href="#clases" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Clases y Funcionalidades</p>
 </div>
 </div>
