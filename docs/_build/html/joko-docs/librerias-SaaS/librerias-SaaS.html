@@ -92,7 +92,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#joko-utils">joko-utils</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#introduccion">Introducción</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#instalacion-o-actualizacion">Instalación o Actualización</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ejemplos-de-metodos">Ejemplos de Métodos</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#clases-y-ejemplos">Clases y Ejemplos</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#csvutils-csv-comma-seperated-values">CsvUtils (CSV - Comma Seperated Values)</a></li>
 </ul>
 </li>
@@ -199,34 +199,97 @@
 </dl>
 </div>
 <hr class="docutils" />
-<div class="section" id="ejemplos-de-metodos">
-<h3>Ejemplos de Métodos<a class="headerlink" href="#ejemplos-de-metodos" title="Enlazar permanentemente con este título">¶</a></h3>
+<div class="section" id="clases-y-ejemplos">
+<h3>Clases y Ejemplos<a class="headerlink" href="#clases-y-ejemplos" title="Enlazar permanentemente con este título">¶</a></h3>
 <div class="section" id="csvutils-csv-comma-seperated-values">
 <h4>CsvUtils (CSV - Comma Seperated Values)<a class="headerlink" href="#csvutils-csv-comma-seperated-values" title="Enlazar permanentemente con este título">¶</a></h4>
-<p>Ejemplo del método <strong>convertToCsv</strong></p>
-<p>Los Inputs:</p>
+<p>Contiene utilidades para trabajar con el formato CSV</p>
+<p><strong>Caso de uso del método convertToCsv</strong></p>
+<p>El metodo transforma una lista de objetos serializables a un texto en formato CSV, devolviendo el resultado como un byte stream.</p>
+<p>Inputs:</p>
 <ul class="simple">
 <li>Una lista de tipo indefinido que tendrá objetos de una misma clase y cuya clase tenga la propiedad de ser serializable.</li>
 <li>Una lista de Strings donde cada elemento es el nombre de una columna del texto CSV así como el nombre del atributo del objeto cuyo Getter se llamara (Como vera en el ejemplo no es Case-Sensitive).</li>
 <li>La clase de la lista de objetos.</li>
 </ul>
 <p>Para el ejemplo usaremos la siguiente clase para nuestra lista de objetos, haciendo que sea serializable así como definiendo los Getters para usar los atributos:</p>
-<a class="reference internal image-reference" href="../../_images/convertToCsvEj1.png"><img alt="../../_images/convertToCsvEj1.png" src="../../_images/convertToCsvEj1.png" style="width: 677.0px; height: 252.0px;" /></a>
-<p>Generamos los Objetos en este caso para luego crear las listas, llamar al método y escribir en un archivo el resultado:</p>
-<a class="reference internal image-reference" href="../../_images/convertToCsvEj2.png"><img alt="../../_images/convertToCsvEj2.png" src="../../_images/convertToCsvEj2.png" style="width: 981.0px; height: 504.0px;" /></a>
-<p>El archivo generado por el ejemplo:</p>
-<a class="reference internal image-reference" href="../../_images/convertToCsvEj3.png"><img alt="../../_images/convertToCsvEj3.png" src="../../_images/convertToCsvEj3.png" style="width: 303.0px; height: 102.0px;" /></a>
-<p>Algunos datos extra:</p>
-<ul class="simple">
-<li>El orden de la lista de cabeceras define el orden de columnas del archivo final</li>
-<li>Si no existe Getter para cierta cabecera definida se rellenara la columna con valores vacíos</li>
-</ul>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span class="kd">public</span> <span class="kd">class</span> <span class="nc">UserData</span> <span class="kd">implements</span> <span class="n">java</span><span class="o">.</span><span class="na">io</span><span class="o">.</span><span class="na">Serializable</span> <span class="o">{</span>
+        <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">&quot;NULL&quot;</span><span class="o">;</span>
+        <span class="kd">private</span> <span class="n">String</span> <span class="n">lastName</span> <span class="o">=</span> <span class="s">&quot;NULL&quot;</span><span class="o">;</span>
+        <span class="kd">private</span> <span class="n">Integer</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">name</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setName</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getLastName</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">lastName</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setLastName</span><span class="o">(</span><span class="n">String</span> <span class="n">lastName</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">lastName</span> <span class="o">=</span> <span class="n">lastName</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">Integer</span> <span class="nf">getId</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">id</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setId</span><span class="o">(</span><span class="n">Integer</span> <span class="n">id</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">id</span> <span class="o">=</span> <span class="n">id</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p>Generamos los Objetos en este caso para luego crear las listas, llamar al método y escribir en un archivo el resultado, debe crear el archivo que contendrá el resultado y rellenar el campo «DIRECCION_DEL_ARCHIVO» con la dirección de su archivo</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span class="c1">// Creamos 3 objetos de usuarios para nuestro ejemplo</span>
+<span class="n">UserData</span> <span class="n">user1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">UserData</span><span class="o">();</span>
+<span class="n">user1</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="s">&quot;Harken&quot;</span><span class="o">);</span>
+<span class="n">user1</span><span class="o">.</span><span class="na">setLastName</span><span class="o">(</span><span class="s">&quot;Nekrah&quot;</span><span class="o">);</span>
+<span class="n">user1</span><span class="o">.</span><span class="na">setId</span><span class="o">(</span><span class="mi">12345</span><span class="o">);</span>
+
+<span class="n">UserData</span> <span class="n">user2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">UserData</span><span class="o">();</span>
+<span class="n">user2</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="s">&quot;Leanne&quot;</span><span class="o">);</span>
+<span class="n">user2</span><span class="o">.</span><span class="na">setLastName</span><span class="o">(</span><span class="s">&quot;Ennael&quot;</span><span class="o">);</span>
+<span class="n">user2</span><span class="o">.</span><span class="na">setId</span><span class="o">(</span><span class="mi">77777</span><span class="o">);</span>
+
+<span class="n">UserData</span> <span class="n">user3</span> <span class="o">=</span> <span class="k">new</span> <span class="n">UserData</span><span class="o">();</span>
+<span class="n">user3</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="s">&quot;Hector&quot;</span><span class="o">);</span>
+<span class="n">user3</span><span class="o">.</span><span class="na">setLastName</span><span class="o">(</span><span class="s">&quot;Rotceh&quot;</span><span class="o">);</span>
+<span class="n">user3</span><span class="o">.</span><span class="na">setId</span><span class="o">(</span><span class="mi">41569</span><span class="o">);</span>
+
+<span class="c1">// Metemos los objetos de usuario en una lista de tipo indefinido</span>
+<span class="n">List</span><span class="o">&lt;?&gt;</span> <span class="n">object_list</span> <span class="o">=</span> <span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="n">user1</span><span class="o">,</span> <span class="n">user2</span><span class="o">,</span> <span class="n">user3</span><span class="o">);</span>
+<span class="c1">// Creamos la lista que contiene los nombres de cada columna y cuyos nombres</span>
+<span class="c1">// deben coincidir con los atributos de los objetos para que se carguen los</span>
+<span class="c1">// datos correctamente (No es case-sensitive y el orden de la lista se</span>
+<span class="c1">// mantiene en el orden de las columnas del archivo CSV)</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">header_list</span> <span class="o">=</span> <span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="s">&quot;Name&quot;</span><span class="o">,</span> <span class="s">&quot;LastName&quot;</span><span class="o">,</span> <span class="s">&quot;ID&quot;</span><span class="o">);</span>
+
+<span class="c1">// Llamamos al método con los datos preparados, pasando la lista de objetos,</span>
+<span class="c1">// la lista de cabeceras de columna y la Clase de los Objetos de la primera</span>
+<span class="c1">// lista</span>
+<span class="kt">byte</span> <span class="o">[]</span> <span class="n">resultado</span> <span class="o">=</span> <span class="n">CsvUtils</span><span class="o">.</span><span class="na">convertToCsv</span><span class="o">(</span><span class="n">object_list</span><span class="o">,</span> <span class="n">header_list</span><span class="o">,</span> <span class="n">UserData</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+
+<span class="c1">// Luego podemos guardar el resultado en un archivo de quererlo</span>
+<span class="n">FileUtils</span><span class="o">.</span><span class="na">writeByteArrayToFile</span><span class="o">(</span><span class="k">new</span> <span class="n">File</span><span class="o">(</span><span class="s">&quot;DIRECCION_DEL_ARCHIVO&quot;</span><span class="o">),</span> <span class="n">resultado</span><span class="o">);</span>
+</pre></div>
+</div>
+<p>El archivo generado por este ejemplo:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre>Name,LastName,ID
+&quot;Harken&quot;,&quot;Nekrah&quot;,&quot;12345&quot;
+&quot;Leanne&quot;,&quot;Ennael&quot;,&quot;77777&quot;
+&quot;Hector&quot;,&quot;Rotceh&quot;,&quot;41569&quot;
+</pre></div>
 </div>
 </div>
+</div>
+<hr class="docutils" />
 <div class="section" id="versiones">
 <h3>Versiones<a class="headerlink" href="#versiones" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Las versiones y releases</p>
 </div>
+<hr class="docutils" />
 <div class="section" id="seccion-de-to-do-y-to-fix">
 <h3>Sección de TO DO y TO FIX<a class="headerlink" href="#seccion-de-to-do-y-to-fix" title="Enlazar permanentemente con este título">¶</a></h3>
 <p>Lista de cosas por hacer o que se deben mejorar</p>
