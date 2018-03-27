@@ -4,11 +4,11 @@ Ejemplo del método **convertToCsv**
 
 Los Inputs:
 
-* Una lista de tipo indefinido que tendra objetos de la misma clase y cuya clase tenga las propiedad de ser serializable.
+* Una lista de tipo indefinido que tendrá objetos de una misma clase y cuya clase tenga la propiedad de ser serializable.
 * Una lista de Strings donde cada elemento es el nombre de una columna del texto CSV así como el nombre del atributo del objeto cuyo Getter se llamara (Como vera en el ejemplo no es Case-Sensitive).
 * La clase de la lista de objetos.
 
-	Para el ejemplo usaremos la siguiente clase para nuestra lista de objetos, haciendo que sea serializable así como definiendo los Getters para usar los atributos:
+Para el ejemplo usaremos la siguiente clase para nuestra lista de objetos, haciendo que sea serializable así como definiendo los Getters para usar los atributos:
 
 .. image:: /_static/images/CsvUtils/convertToCsvEj1.png
    :scale: 100 %
