@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>CSV (Comma Seperated Values) Utils &mdash; documentación de Joko Framework - </title>
+  <title>joko-utils &mdash; documentación de Joko Framework - </title>
   
 
   
@@ -133,13 +133,13 @@
     
       <li><a href="../../../index.html">Docs</a> &raquo;</li>
         
-      <li>CSV (Comma Seperated Values) Utils</li>
+      <li>joko-utils</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../../_sources/joko-docs/librerias-SaaS/joko-utils/CsvUtils.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../../_sources/joko-docs/librerias-SaaS/joko-utils/joko-utils.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -152,10 +152,24 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="csv-comma-seperated-values-utils">
-<h1>CSV (Comma Seperated Values) Utils<a class="headerlink" href="#csv-comma-seperated-values-utils" title="Enlazar permanentemente con este título">¶</a></h1>
-<p>Contiene utilidades para trabajar con el formato CSV.</p>
-<p><strong>Ejemplo del método convertToCsv</strong>:</p>
+  <div class="section" id="joko-utils">
+<h1>joko-utils<a class="headerlink" href="#joko-utils" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="introduccion">
+<h2>Introducción<a class="headerlink" href="#introduccion" title="Enlazar permanentemente con este título">¶</a></h2>
+<p><strong>joko-utils</strong> es una librería de Java que contiene utilidades varias de modo a facilitar funcionalidades comúnmente usadas a la hora de trabajar sobre el <em>Backend</em> de un proyecto.</p>
+<dl class="docutils">
+<dt><strong>Repositorio:</strong></dt>
+<dd><a class="reference external" href="https://github.com/jokoframework/joko-utils">https://github.com/jokoframework/joko-utils</a></dd>
+<dt><strong>Javadoc:</strong></dt>
+<dd><a class="reference external" href="https://gabrielci.github.io/joko-utils">https://gabrielci.github.io/joko-utils</a></dd>
+</dl>
+</div>
+<div class="section" id="ejemplos">
+<h2>Ejemplos<a class="headerlink" href="#ejemplos" title="Enlazar permanentemente con este título">¶</a></h2>
+<div class="section" id="csv-comma-seperated-values-utils">
+<h3>CSV (Comma Seperated Values) Utils<a class="headerlink" href="#csv-comma-seperated-values-utils" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Contiene utilidades para trabajar con el formato CSV</p>
+<p>Ejemplo del método <strong>convertToCsv</strong>:</p>
 <p>El metodo transforma una lista de objetos serializables a un texto en formato CSV, devolviendo el resultado como un byte stream.</p>
 <p>Inputs:</p>
 <ul class="simple">
@@ -195,7 +209,7 @@
 <span class="o">}</span>
 </pre></div>
 </div>
-<p>Generamos los Objetos en este caso para luego crear las listas, llamar al método y escribir en un archivo el resultado, debe crear el archivo que contendrá el resultado y rellenar el campo «DIRECCION_DEL_ARCHIVO» con la dirección de su archivo:</p>
+<p>Generamos los Objetos en este caso para luego crear las listas, llamar al método y escribir en un archivo el resultado, debe crear el archivo que contendrá el resultado y rellenar el campo «DIRECCION_DEL_ARCHIVO» con la dirección de su archivo</p>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span class="c1">// Creamos 3 objetos de usuarios para nuestro ejemplo</span>
 <span class="n">UserData</span> <span class="n">user1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">UserData</span><span class="o">();</span>
 <span class="n">user1</span><span class="o">.</span><span class="na">setName</span><span class="o">(</span><span class="s">&quot;Miguel&quot;</span><span class="o">);</span>
@@ -235,6 +249,57 @@
 &quot;Carlos&quot;,&quot;Solrac&quot;,&quot;77777&quot;
 &quot;Hector&quot;,&quot;Rotceh&quot;,&quot;41569&quot;
 </pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="excel-utils">
+<h3>Excel Utils<a class="headerlink" href="#excel-utils" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Contiene utilidades para trabajar con archivos Excel</p>
+<p>Ejemplo del método <strong>generateExcel</strong></p>
+<p>El método utiliza los datos pasados para crear un archivo Excel en el directorio especificado con los datos especificados</p>
+<p>Inputs:</p>
+<ul class="simple">
+<li>Table&lt;Integer, Integer, Object&gt; que contenga los datos a escribir en el archivo final.</li>
+<li>Una lista de Strings que contiene las cabeceras de la tabla de datos.</li>
+<li>Un String que contiene el nombre del archivo incluyendo la ruta a este (/home/user/mi_excel.xls), el archivo puede o no existir a la hora de correr el método.</li>
+</ul>
+<p>Generamos los tres inputs para luego llamar al método que escribirá el archivo resultante, debe modificar el campo «DIRECCION_DEL_ARCHIVO» con la dirección de su archivo (Ej: /home/usuario/Desktop/mi_excel.xls)</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span class="c1">// Definimos el directorio donde se creara el archivo incluyendo su nombre (Terminando en .xls)</span>
+<span class="kd">final</span> <span class="n">String</span> <span class="n">fileName</span> <span class="o">=</span> <span class="s">&quot;DIRECCION_DEL_ARCHIVO&quot;</span><span class="o">;</span>
+
+<span class="c1">// Para el ejemplo creamos la lista de cabeceras de la tabla con los nombres de las</span>
+<span class="c1">// columnas deseadas</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">header</span> <span class="o">=</span> <span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="s">&quot;Name&quot;</span><span class="o">,</span> <span class="s">&quot;LastName&quot;</span><span class="o">,</span> <span class="s">&quot;Email&quot;</span><span class="o">,</span> <span class="s">&quot;Cellphone&quot;</span><span class="o">);</span>
+
+<span class="c1">// Creamos y agregamos datos a la tabla</span>
+<span class="n">Table</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">,</span> <span class="n">Integer</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">HashBasedTable</span><span class="o">.</span><span class="na">create</span><span class="o">();</span>
+<span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+    <span class="c1">// data.put(n_fila, n_columna, dato)</span>
+    <span class="n">data</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">i</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="s">&quot;Joko &quot;</span> <span class="o">+</span> <span class="n">i</span><span class="o">);</span>
+    <span class="n">data</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">i</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="s">&quot;Utils &quot;</span> <span class="o">+</span> <span class="n">i</span><span class="o">);</span>
+    <span class="n">data</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">i</span><span class="o">,</span> <span class="mi">2</span><span class="o">,</span> <span class="s">&quot;jokoutils&quot;</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">&quot;@gmail.com&quot;</span><span class="o">);</span>
+    <span class="n">data</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">i</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">123456</span><span class="o">*</span><span class="n">i</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="c1">// Hacemos una instancia de la clase ExcelUtils y usamos el método generateExcel pasando</span>
+<span class="c1">// la tabla de datos, la lista de cabeceras y la dirección y nombre del archivo final</span>
+<span class="n">ExcelUtils</span> <span class="n">excelGenerator</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ExcelUtils</span><span class="o">();</span>
+<span class="n">excelGenerator</span><span class="o">.</span><span class="na">generateExcel</span><span class="o">(</span><span class="n">data</span><span class="o">,</span> <span class="n">header</span><span class="o">,</span> <span class="n">fileName</span><span class="o">);</span>
+</pre></div>
+</div>
+<p>Vista previa del archivo generado por este ejemplo:</p>
+<img alt="../../../_images/generateExcel_img1.png" class="align-center" src="../../../_images/generateExcel_img1.png" />
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="versiones">
+<h2>Versiones<a class="headerlink" href="#versiones" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Las versiones y releases</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="seccion-de-to-do">
+<h2>Sección de TO DO<a class="headerlink" href="#seccion-de-to-do" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Lista de cosas por hacer (Esto a lo mejor iría en el Github como tickets/wishlist?)</p>
 </div>
 </div>
 
