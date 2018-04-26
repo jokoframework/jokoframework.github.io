@@ -1,0 +1,258 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PDF Utils &mdash; documentación de Joko Framework - </title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Índice"
+              href="../../../../genindex.html"/>
+        <link rel="search" title="Búsqueda" href="../../../../search.html"/>
+    <link rel="top" title="documentación de Joko Framework - " href="../../../../index.html"/> 
+
+  
+  <script src="../../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../../index.html" class="icon icon-home"> Joko Framework
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Documentación por tipo de proyecto</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../librerias.html">Librerías</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../starter-kits/starter-kits.html">Kits de Inicio (Starter-Kits)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../proyectos-de-ejemplo/proyectos-de-ejemplo.html">Proyectos de Ejemplo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software-as-a-service/software-as-a-service.html">Software como un Servicio (Software as a Service)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../deprecated/deprecated.html">Proyectos Obsoletos (Deprecated)</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Joko Framework</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../index.html">Docs</a> &raquo;</li>
+        
+      <li>PDF Utils</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../_sources/joko-docs/librerias/joko-utils/ejemplos/PdfUtils.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pdf-utils">
+<h1>PDF Utils<a class="headerlink" href="#pdf-utils" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Contiene utilidades para trabajar con archivos PDF</p>
+<p><strong>Ejemplo del método pdfGenerator</strong></p>
+<p>El método utiliza los datos pasados para crear un archivo PDF en el directorio especificado con una tabla conteniendo los datos especificados y agregando una firma al final con datos varios incluyendo el nombre de usuario especificado.</p>
+<p>Inputs:
+data/filename/user
+- List&lt;List&gt; con los datos a escribir en la tabla del PDF.
+- Un String que contiene el nombre del archivo incluyendo la ruta a este (/home/user/mi_pdf.pdf), el archivo puede o no existir a la hora de correr el método, si se provee Null se creara en el directorio raíz del proyecto.
+- Un String con un nombre de usuario que sera incluido en la firma al final del PDF</p>
+<p>Generamos los tres inputs para luego llamar al método que escribirá el archivo resultante, debe modificar el campo «DIRECCION_DEL_ARCHIVO» con la dirección de su archivo final (Ej: /home/usuario/Desktop/mi_excel.xls) al igual que el campo «NOMBRE_DE_USUARIO» con un nombre con el cual firmar al final el PDF:</p>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span class="c1">// Para el ejemplo creamos una lista con los nombres de las columnas y luego una lista por</span>
+<span class="c1">// fila</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">cabeceras</span> <span class="o">=</span> <span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="s">&quot;Nombre Comun&quot;</span><span class="o">,</span> <span class="s">&quot;Nombre Cientifico&quot;</span><span class="o">);</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">L1</span> <span class="o">=</span> <span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="s">&quot;Perro&quot;</span><span class="o">,</span> <span class="s">&quot;Canis Lupus Familiaris&quot;</span><span class="o">);</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">L2</span> <span class="o">=</span> <span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="s">&quot;Gato&quot;</span><span class="o">,</span> <span class="s">&quot;Felis Silvestris Catus&quot;</span><span class="o">);</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">L3</span> <span class="o">=</span> <span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="s">&quot;Conejo&quot;</span><span class="o">,</span> <span class="s">&quot;Oryctolagus Cuniculus&quot;</span><span class="o">);</span>
+
+<span class="c1">// Hacemos la tabla donde cada elemento sera una lista, el orden de las filas sera el orden de</span>
+<span class="c1">// las listas, con la primera siendo el nombre de las columnas y el resto registros de la tabla</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&gt;</span> <span class="n">data</span> <span class="o">=</span> <span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="n">cabeceras</span><span class="o">,</span> <span class="n">L1</span><span class="o">,</span> <span class="n">L2</span><span class="o">,</span> <span class="n">L3</span><span class="o">);</span>
+
+<span class="c1">// Definimos el directorio donde se creara el archivo incluyendo su nombre (Terminando en .pdf),</span>
+<span class="c1">// si se asigna &quot;null&quot; se utilizara el directorio del proyecto por defecto</span>
+<span class="kd">final</span> <span class="n">String</span> <span class="n">fileName</span> <span class="o">=</span> <span class="s">&quot;DIRECCION_DEL_ARCHIVO&quot;</span><span class="o">;</span>
+
+<span class="c1">// Se define un nombre de usuario de modo que se generara una firma al final del PDF</span>
+<span class="n">String</span> <span class="n">user</span> <span class="o">=</span> <span class="s">&quot;NOMBRE_DEL_USUARIO&quot;</span><span class="o">;</span>
+
+<span class="c1">// Al correr el método se creara el archivo y se retornara para ser utilizado</span>
+<span class="n">File</span> <span class="n">resultado</span> <span class="o">=</span> <span class="n">PdfGenerator</span><span class="o">.</span><span class="na">fromList</span><span class="o">(</span><span class="n">data</span><span class="o">,</span> <span class="n">fileName</span><span class="o">,</span> <span class="n">user</span><span class="o">);</span>
+</pre></div>
+</div>
+<p>Vista previa del PDF generado por este ejemplo:</p>
+<img alt="../../../../_images/pdfGenerator_img1.png" class="align-center" src="../../../../_images/pdfGenerator_img1.png" />
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, SODEP S.A..
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../../../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
