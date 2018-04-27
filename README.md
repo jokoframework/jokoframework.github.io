@@ -3,7 +3,7 @@
 Este proyecto contiene los archivos para generar la página web de Joko Framework en ReadTheDocs.com (Hosting gratuito para proyectos Open Source), los archivos contenidos son la configuración para la herramienta Sphinx (Genera la página) y las páginas escritas en el lenguaje Markup "reStructuredText" tal que mediante Webhooks ReadTheDocs al detectar los cambios del proyecto se encarga de regenerar de su lado la página usando Sphinx y los archivos recientes.
 
 ## Instrucciones para agregar documentación
-Antes que nada la documentación en ReadTheDocs <b>no debe contener especificaciones de código</b> de algún proyecto, eso se deja a cargo de los Javadocs, lo que SI va en esta página es la Introducción a los proyectos, Guías de Uso/Instalación, Ejemplos, etc. 
+Antes que nada la documentación en ReadTheDocs <b>no debe contener especificaciones de código</b> de algún proyecto, eso se deja a cargo de los Javadocs, lo que <b>sí</b> va en esta página es todo lo demas como la Introducción del proyecto, Guía de Uso/Instalación, Ejemplos/Tutoriales, etc.
     
 A continuación un paso a paso de <b>como</b> agregar nuevas páginas al proyecto:
 
