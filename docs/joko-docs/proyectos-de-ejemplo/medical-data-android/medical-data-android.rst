@@ -1,8 +1,9 @@
 Medical Data
-************
+============
 
 Introducción
-============
+************
+
 Proyecto en Android hecho para recolectar información sobre pacientes con trastorno bipolar de modo a poder analizar los datos y tratar de predecir una crisis, el proyecto se encarga de la recolección de datos y tiene las funcionalidades de: 
 
 - Login
