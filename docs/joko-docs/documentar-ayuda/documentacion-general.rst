@@ -21,9 +21,9 @@ A continuación un paso a paso de **como** agregar nuevas páginas al proyecto:
 
 3- Los archivos escritos en reStructuredText del proyecto deben terminar en la extensión “.rst”, si se desea modificar la página de entrada esta se especifica en el archivo /docs/index.rst mientras que el resto de las páginas están en el directorio /docs/joko-docs/\*\*\* tratando de mantener una estructura donde un archivo es una división (No necesariamente una página). Si quiere incluir imágenes debe poner las imagenes a referenciar en un subdirectorio de /docs/_static/\*\*\* (Es recomendado seguir una misma notación en el directorio _static/\*\*\* que en el de joko-docs/\*\*\*).
 
-4- Instalar Sphinx **solo si desea probar localmente como se va viendo la página**, ReadTheDocs genera con Sphinx de su lado usando solo los archivos fuente escritos en reStructuredText
-    
-    `Instalación de Sphinx <http://www.sphinx-doc.org/en/master/usage/installation.html>`_
+4- Instalar Sphinx **solo si desea probar localmente como se va viendo la página**, ReadTheDocs genera con Sphinx de su lado usando solo los archivos fuente escritos en reStructuredText.
+
+`La guía de instalación de Sphinx: <http://www.sphinx-doc.org/en/master/usage/installation.html>`_ ofrece múltiples opciones según el sistema operativo y la plataforma utilizada. La recomendación es hacerlo a través de los paquetes de Python “Pypi”, debido a que la versión disponible en el repositorio de Linux puede no ser la última.
 
         4.1- Si quiere jugar con las configuraciones de Sphinx (No es necesario) se encuentran en /docs/conf.py (Archivo en Python, recuerde de indentar correctamente!)
             
