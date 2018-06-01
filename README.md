@@ -30,7 +30,17 @@ A continuación un paso a paso de <b>como</b> agregar nuevas páginas al proyect
     Opciones de configuración:
         http://www.sphinx-doc.org/en/master/config.html
 
-4.2- Para probar lo que va escribiendo puede construir el proyecto con sphinx localmente, en particular puede utilizar un regenerador “sphinx-autobuild” que viene incluido con Sphinx (Vera su pagina y se actualizará cuando encuentra cambios en el directorio/s especificado/s), el autobuild sirve su pagina en el localhost puerto 8000 por defecto (En su navegador ponga "localhost:8000" como URL y podrá acceder a esta página servida). El comando para levantar el regenerador (Corrido desde la carpeta raíz del proyecto) es: “sphinx-autobuild docs docs/_build/html”.
+4.2- Ademas de Sphinx debe descargar el "Theme" de ReadTheDocs actualmente utilizado (No viene por defecto), esto se isntala atravez del manejador de paquetes de Python "pip"
+    
+    Instalación de Sphinx RTD Theme:
+        https://github.com/rtfd/sphinx_rtd_theme
+
+4.3- Cada Theme de Sphinx viene con propiedades que se pueden especificar en el archivo "conf.py" (Por ejemplo que tenga un botón o no al final de la página que lleva a la siguiente), si se cambia de Theme es casi seguro que habran problemas a la hora de generar la página porque las propiedades del Theme de Read The Docs utilizadas no existirán o estarán nombradas de forma distinta (Mirar asignación a variable "html_theme_options" en conf.py).
+    
+    Propiedades aceptadas por el Sphinx RTD Theme:
+        https://sphinx-rtd-theme.readthedocs.io/en/latest/configuring.html
+
+4.4- Para probar lo que va escribiendo puede construir el proyecto con sphinx localmente, en particular puede utilizar un regenerador “sphinx-autobuild” que viene incluido con Sphinx (Vera su pagina y se actualizará cuando encuentra cambios en el directorio/s especificado/s), el autobuild sirve su pagina en el localhost puerto 8000 por defecto (En su navegador ponga "localhost:8000" como URL y podrá acceder a esta página servida). El comando para levantar el regenerador (Corrido desde la carpeta raíz del proyecto) es: “sphinx-autobuild docs docs/_build/html”.
     
     Sphinx Autobuild:        
         https://pypi.python.org/pypi/sphinx-autobuild
