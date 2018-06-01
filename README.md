@@ -30,7 +30,7 @@ A continuación un paso a paso de <b>como</b> agregar nuevas páginas al proyect
     Opciones de configuración:
         http://www.sphinx-doc.org/en/master/config.html
 
-4.2- Para probar lo que va escribiendo puede construir el proyecto con sphinx localmente, en particular puede utilizar un regenerador “sphinx-autobuild” que viene incluido con Sphinx (Vera su pagina y se actualizará cuando encuentra cambios en el directorio/s especificado/s), el autobuild sirve su pagina en el localhost puerto 8000 por defecto (En su navegador ponga "localhost:8000" como URL y podrá acceder a esta página servida).
+4.2- Para probar lo que va escribiendo puede construir el proyecto con sphinx localmente, en particular puede utilizar un regenerador “sphinx-autobuild” que viene incluido con Sphinx (Vera su pagina y se actualizará cuando encuentra cambios en el directorio/s especificado/s), el autobuild sirve su pagina en el localhost puerto 8000 por defecto (En su navegador ponga "localhost:8000" como URL y podrá acceder a esta página servida). El comando para levantar el regenerador (Corrido desde la carpeta raíz del proyecto) es: “sphinx-autobuild docs docs/_build/html”.
     
     Sphinx Autobuild:        
         https://pypi.python.org/pypi/sphinx-autobuild
